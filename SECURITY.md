@@ -5,7 +5,7 @@ This project hosts a study tool for security practitioners. Its own security pos
 ## Reporting a vulnerability
 
 **Preferred channel:** open a private security advisory via GitHub:
-`https://github.com/<owner>/<repo>/security/advisories/new`
+[https://github.com/McJuniorstein/cc-flashcards/security/advisories/new](https://github.com/McJuniorstein/cc-flashcards/security/advisories/new)
 
 Please do **not** file public issues for vulnerability reports.
 
