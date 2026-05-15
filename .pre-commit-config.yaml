@@ -13,7 +13,13 @@ repos:
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
+        # Extracted source markdown is the canonical anchor for card verification
+        # (its sha256 lands in every card's source_hash field). It must be
+        # byte-identical to whatever Marker produced - hygiene hooks must not
+        # mutate it.
+        exclude: ^sources/extracted/
       - id: end-of-file-fixer
+        exclude: ^sources/extracted/
       - id: check-yaml
       - id: check-json
       - id: check-added-large-files

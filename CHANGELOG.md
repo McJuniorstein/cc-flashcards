@@ -18,3 +18,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MIT license for code, CC0 1.0 Universal for deck content
 - Planning docs preserved under `docs/planning/`
 - NIST SP 1308 (CSF 2.0 Quick-Start Guide) as first source PDF
+- `scripts/extract.py` &mdash; Marker-based PDF-to-Markdown extraction pipeline
+- First extraction landed: `sources/extracted/NIST.SP.1308/NIST.SP.1308.md` plus `sha256sum`-compatible hash
+- `AGENTS.md` clarifies that `source_doc` must point to the originating document, not a navigator/QSG that re-quotes a definition

@@ -77,6 +77,17 @@ This gives the project a permanent, public audit trail of every editorial decisi
 - For withdrawn NIST publications still cited by ISC2 (notably `SP 800-27 Rev A`): cite them the way ISC2 does. Do not editorialise about withdrawal status.
 - `source_section` is optional but encouraged when the source has clear section structure (e.g., `Section 2.3`)
 
+### Attribute to the originating document, not the navigator
+
+NIST publications &mdash; especially Quick-Start Guides (QSGs) and Frameworks &mdash; routinely re-quote definitions from other NIST publications. For example, SP 1308 lists "High Value Asset" in its Key Terms but the canonical definition lives in `NIST SP 800-160 Vol. 2 Rev. 1`. A card's `source_doc` field must always point to the **originating** document the definition was written for, not the navigator document that happens to surface it.
+
+If you encounter a definition in a navigator document and the originating document is not yet in `/sources/`, do one of two things:
+
+1. Download the originating document, add it to `/sources/`, run `scripts/extract.py`, and cite the originating extraction.
+2. Skip the card for now and add the originating document to `/sources/README.md`'s "still to add" list.
+
+Never cite the navigator just because that's where you read the definition.
+
 ## Out of scope for this protocol
 
 - Teaching the material. Explanations belong in user-facing UI text and the README, not on cards.

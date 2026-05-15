@@ -59,6 +59,9 @@ out/
 .marker_cache/
 .huggingface/
 
+# Marker per-extraction metadata (regenerated on re-extract; not load-bearing for cards)
+sources/extracted/**/*_meta.json
+
 # IDE
 .vscode/
 .idea/
