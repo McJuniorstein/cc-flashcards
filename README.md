@@ -26,6 +26,7 @@ Pre-content. Schema and verification pipeline are defined; cards have not yet be
 | Path | Purpose |
 |---|---|
 | `AGENTS.md` | Verification protocol &mdash; the contract any contributor (human or agent) works against |
+| `docs/ux-principles.md` | UX contract &mdash; product rules, performance budgets, architecture commitments |
 | `SECURITY.md` | Vulnerability disclosure policy |
 | `cards/schema.json` | Card data schema |
 | `sources/` | NIST source PDFs and extracted text |
