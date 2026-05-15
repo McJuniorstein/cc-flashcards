@@ -21,3 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `scripts/extract.py` &mdash; Marker-based PDF-to-Markdown extraction pipeline
 - First extraction landed: `sources/extracted/NIST.SP.1308/NIST.SP.1308.md` plus `sha256sum`-compatible hash
 - `AGENTS.md` clarifies that `source_doc` must point to the originating document, not a navigator/QSG that re-quotes a definition
+- NIST SP 800-12 Rev 1 (An Introduction to Information Security) added as canonical source
+- `scripts/verify.py` &mdash; stdlib-only card verifier (schema, hash provenance, verbatim substring match, byte-equal `back == source_excerpt`)
+- Pilot batch: 8 Domain 1 cards drawn from SP 800-12 section 1.4 (Information, Information Security, Confidentiality, Integrity, Data Integrity, System Integrity, Availability, Security Controls). 7 verified verbatim; Confidentiality marked `paraphrased` because a footnote splits the definition across two paragraphs in the source.
+- `cards/README.md` and updated `scripts/README.md` documenting the card layout and verifier usage
