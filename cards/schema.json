@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/McJuniorstein/cc-flashcards/cards/schema.json",
+  "title": "CC Flashcard",
+  "description": "Schema for a single flashcard in the CC Flashcards deck.",
+  "type": "object",
+  "required": [
+    "id",
+    "front",
+    "back",
+    "source_doc",
+    "source_excerpt",
+    "answer_type",
+    "primary_domain",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^cc-[a-z0-9]{6,}$",
+      "description": "Stable opaque identifier. Format: 'cc-' followed by lowercase alphanumeric characters (e.g., ULID-derived)."
+    },
+    "front": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The term or concept on the front of the card."
+    },
+    "back": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The definition on the back of the card. For answer_type=verbatim, MUST equal source_excerpt byte-for-byte."
+    },
+    "source_doc": {
+      "type": "string",
+      "minLength": 1,
+      "description": "NIST publication identifier. Example: 'NIST SP 800-27 Rev A'."
+    },
+    "source_section": {
+      "type": ["string", "null"],
+      "description": "Optional section reference within source_doc. Example: 'Section 2.3'."
+    },
+    "source_excerpt": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The canonical verbatim text extracted from the source document. Used as the source of truth for verification."
+    },
+    "source_hash": {
+      "type": ["string", "null"],
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "description": "SHA-256 hash of the extracted source document (Markdown) at the time of card verification. Mismatch triggers re-verification."
+    },
+    "answer_type": {
+      "type": "string",
+      "enum": ["verbatim", "paraphrased"],
+      "description": "verbatim: back === source_excerpt. paraphrased: back is derived from source_excerpt under the rules in AGENTS.md."
+    },
+    "primary_domain": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "ISC2 CC exam domain. 1=Security Principles, 2=BC/DR/IR, 3=Access Controls, 4=Network Security, 5=Security Operations."
+    },
+    "secondary_domains": {
+      "type": "array",
+      "items": {"type": "integer", "minimum": 1, "maximum": 5},
+      "uniqueItems": true,
+      "default": [],
+      "description": "Optional additional domains the concept touches."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "verified", "active", "deprecated"],
+      "description": "Card lifecycle state. See AGENTS.md."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of card creation."
+    },
+    "modified_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of last modification."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,92 @@
+# Secrets / env
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.json
+credentials.json
+*.secrets
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+coverage.xml
+*.cover
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Node
+node_modules/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/install-state.gz
+
+# Build outputs
+out/
+.next/
+.nuxt/
+.output/
+.astro/
+.svelte-kit/
+.vercel/
+.netlify/
+
+# Model / extraction caches
+.cache/
+.marker_cache/
+.huggingface/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temp files
+*.bak
+*.tmp
+*.temp
+
+# Local notes / scratchpad
+SCRATCH.md
+NOTES.local.md
+*.local.md
