@@ -10,16 +10,16 @@ This directory holds the authoritative source documents that every card cites.
 
 ## Documents
 
-> _One row per source. Includes the download URL and date for reproducibility. None downloaded yet for production use &mdash; see [`samples/`](./samples/) for the format-reference PDFs._
+> _One row per source. Includes the download URL and date for reproducibility._
 
 | Identifier | Title | Source URL | Downloaded |
 |---|---|---|---|
-| _(none yet)_ | | | |
+| NIST SP 1308 | NIST Cybersecurity Framework 2.0: Cybersecurity, Enterprise Risk Management, and Workforce Management Quick-Start Guide | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1308.pdf | 2026-05-15 |
 
-Planned source set (per `docs/planning/`):
+Still to add (per `docs/planning/`):
 
 - NIST SP 800-12 Rev 1
-- NIST CSF 2.0
+- NIST CSF 2.0 (the framework itself; SP 1308 above is the companion Quick-Start Guide)
 - NIST SP 800-27 Rev A (withdrawn by NIST but still cited by ISC2)
 - NIST SP 800-53 Rev 5
 - NIST SP 800-61 Rev 2
