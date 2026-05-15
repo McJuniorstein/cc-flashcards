@@ -15,10 +15,10 @@ This directory holds the authoritative source documents that every card cites.
 | Identifier | Title | Source URL | Downloaded |
 |---|---|---|---|
 | NIST SP 1308 | NIST Cybersecurity Framework 2.0: Cybersecurity, Enterprise Risk Management, and Workforce Management Quick-Start Guide | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1308.pdf | 2026-05-15 |
+| NIST SP 800-12 Rev 1 | An Introduction to Information Security | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf | 2026-05-15 |
 
 Still to add (per `docs/planning/`):
 
-- NIST SP 800-12 Rev 1
 - NIST CSF 2.0 (the framework itself; SP 1308 above is the companion Quick-Start Guide)
 - NIST SP 800-27 Rev A (withdrawn by NIST but still cited by ISC2)
 - NIST SP 800-53 Rev 5
