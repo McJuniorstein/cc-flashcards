@@ -10,13 +10,20 @@ This directory holds the authoritative source documents that every card cites.
 
 ## Documents
 
-> _One row per source. Includes the download URL and date for reproducibility._
+> _One row per source. Includes the download URL and date for reproducibility. None downloaded yet for production use &mdash; see [`samples/`](./samples/) for the format-reference PDFs._
 
 | Identifier | Title | Source URL | Downloaded |
 |---|---|---|---|
-| NIST SP 1308 | _(to be confirmed)_ | _(add nist.gov URL)_ | 2026-05-15 |
+| _(none yet)_ | | | |
 
-> _Note: NIST SP 1308 was an early download. Confirm full title and URL, plus whether it is the right source for CC content. Likely additions per the planning doc: SP 800-12 Rev 1, CSF 2.0, SP 800-27 Rev A, SP 800-53 Rev 5, SP 800-61 Rev 2, SP 800-34._
+Planned source set (per `docs/planning/`):
+
+- NIST SP 800-12 Rev 1
+- NIST CSF 2.0
+- NIST SP 800-27 Rev A (withdrawn by NIST but still cited by ISC2)
+- NIST SP 800-53 Rev 5
+- NIST SP 800-61 Rev 2
+- NIST SP 800-34
 
 ## Reproducing the source set
 
