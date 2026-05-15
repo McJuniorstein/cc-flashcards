@@ -25,3 +25,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `scripts/verify.py` &mdash; stdlib-only card verifier (schema, hash provenance, verbatim substring match, byte-equal `back == source_excerpt`)
 - Pilot batch: 8 Domain 1 cards drawn from SP 800-12 section 1.4 (Information, Information Security, Confidentiality, Integrity, Data Integrity, System Integrity, Availability, Security Controls). 7 verified verbatim; Confidentiality marked `paraphrased` because a footnote splits the definition across two paragraphs in the source.
 - `cards/README.md` and updated `scripts/README.md` documenting the card layout and verifier usage
+- Pilot scale-up: 15 more verbatim cards from SP 800-12 sections 4 (Threats) and 5 (Policy):
+  - **Policy & governance:** Information Security Policy, Procedures, Standards
+  - **Risk fundamentals:** Vulnerability, Threat Source, Threat Event
+  - **Threats & malware:** Malicious Hacker, Malicious Code, Virus, Trojan Horse, Worm, Logic Bomb, Ransomware, Social Engineering, Advanced Persistent Threat
+- Deck stands at 23 cards: 22 verbatim-verified, 1 paraphrased awaiting human PR review

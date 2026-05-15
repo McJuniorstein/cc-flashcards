@@ -1,0 +1,15 @@
+{
+  "id": "cc-2d8a47b6",
+  "front": "Threat Source",
+  "back": "The intent and method targeted at the intentional exploitation of a vulnerability or a situation and method that may accidentally exploit a vulnerability.",
+  "source_doc": "NIST SP 800-12 Rev 1",
+  "source_section": "Section 4.1 (footnote 6)",
+  "source_excerpt": "The intent and method targeted at the intentional exploitation of a vulnerability or a situation and method that may accidentally exploit a vulnerability.",
+  "source_hash": "sha256:0669500e913012bf86687d9b1b362b0e64ed5e8d46a45c6ae434c537b425ce51",
+  "answer_type": "verbatim",
+  "primary_domain": 1,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:45:00Z",
+  "modified_at": null
+}

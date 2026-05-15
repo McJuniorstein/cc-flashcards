@@ -1,0 +1,15 @@
+{
+  "id": "cc-83c4f267",
+  "front": "Logic Bomb",
+  "back": "This type of malicious code is a set of instructions secretly and intentionally inserted into a program or software system to carry out a malicious function at a predisposed time and date or when a specific condition is met.",
+  "source_doc": "NIST SP 800-12 Rev 1",
+  "source_section": "Section 4.1.4",
+  "source_excerpt": "This type of malicious code is a set of instructions secretly and intentionally inserted into a program or software system to carry out a malicious function at a predisposed time and date or when a specific condition is met.",
+  "source_hash": "sha256:0669500e913012bf86687d9b1b362b0e64ed5e8d46a45c6ae434c537b425ce51",
+  "answer_type": "verbatim",
+  "primary_domain": 5,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:45:00Z",
+  "modified_at": null
+}

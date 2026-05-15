@@ -1,0 +1,15 @@
+{
+  "id": "cc-7a912f08",
+  "front": "Standards",
+  "back": "Organizational standards (not to be confused with American National Standards, FIPS, Federal Standards, or other national or international standards) specify uniform use of specific technologies, parameters, or procedures when such uniform use will benefit an organization.",
+  "source_doc": "NIST SP 800-12 Rev 1",
+  "source_section": "Section 5.1",
+  "source_excerpt": "Organizational standards (not to be confused with American National Standards, FIPS, Federal Standards, or other national or international standards) specify uniform use of specific technologies, parameters, or procedures when such uniform use will benefit an organization.",
+  "source_hash": "sha256:0669500e913012bf86687d9b1b362b0e64ed5e8d46a45c6ae434c537b425ce51",
+  "answer_type": "verbatim",
+  "primary_domain": 1,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:45:00Z",
+  "modified_at": null
+}

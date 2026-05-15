@@ -1,0 +1,15 @@
+{
+  "id": "cc-e1c87b29",
+  "front": "Virus",
+  "back": "A code segment that replicates by attaching copies of itself to existing executables. The new copy of the virus is executed when a user executes the new host program. The virus may include an additional \"payload\" that triggers when specific conditions are met.",
+  "source_doc": "NIST SP 800-12 Rev 1",
+  "source_section": "Section 4.1.4",
+  "source_excerpt": "A code segment that replicates by attaching copies of itself to existing executables. The new copy of the virus is executed when a user executes the new host program. The virus may include an additional \"payload\" that triggers when specific conditions are met.",
+  "source_hash": "sha256:0669500e913012bf86687d9b1b362b0e64ed5e8d46a45c6ae434c537b425ce51",
+  "answer_type": "verbatim",
+  "primary_domain": 5,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:45:00Z",
+  "modified_at": null
+}

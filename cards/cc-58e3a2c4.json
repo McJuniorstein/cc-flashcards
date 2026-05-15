@@ -1,0 +1,15 @@
+{
+  "id": "cc-58e3a2c4",
+  "front": "Malicious Hacker",
+  "back": "Malicious hacker is a term used to describe an individual or group who use an understanding of systems, networking, and programming to illegally access systems, cause damage, or steal information.",
+  "source_doc": "NIST SP 800-12 Rev 1",
+  "source_section": "Section 4.1.3",
+  "source_excerpt": "Malicious hacker is a term used to describe an individual or group who use an understanding of systems, networking, and programming to illegally access systems, cause damage, or steal information.",
+  "source_hash": "sha256:0669500e913012bf86687d9b1b362b0e64ed5e8d46a45c6ae434c537b425ce51",
+  "answer_type": "verbatim",
+  "primary_domain": 5,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:45:00Z",
+  "modified_at": null
+}
