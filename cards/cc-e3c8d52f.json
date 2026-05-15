@@ -1,0 +1,15 @@
+{
+  "id": "cc-e3c8d52f",
+  "front": "Recovery Time Objective (RTO)",
+  "back": "RTO defines the maximum amount of time that a system resource can remain unavailable before there is an unacceptable impact on other system resources, supported mission/business processes, and the MTD.",
+  "source_doc": "NIST SP 800-34 Rev 1",
+  "source_section": "Section 3.2.1",
+  "source_excerpt": "RTO defines the maximum amount of time that a system resource can remain unavailable before there is an unacceptable impact on other system resources, supported mission/business processes, and the MTD.",
+  "source_hash": "sha256:ed6e7498ed46ca642dde37c00c36b8a8478e67b3327f3d61acad13a1a8e0f218",
+  "answer_type": "verbatim",
+  "primary_domain": 2,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:55:00Z",
+  "modified_at": null
+}

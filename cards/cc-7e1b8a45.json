@@ -1,0 +1,15 @@
+{
+  "id": "cc-7e1b8a45",
+  "front": "Adverse Event",
+  "back": "Adverse events are events with a negative consequence, such as system crashes, packet floods, unauthorized use of system privileges, unauthorized access to sensitive data, and execution of malware that destroys data.",
+  "source_doc": "NIST SP 800-61 Rev 2",
+  "source_section": "Section 2.1",
+  "source_excerpt": "Adverse events are events with a negative consequence, such as system crashes, packet floods, unauthorized use of system privileges, unauthorized access to sensitive data, and execution of malware that destroys data.",
+  "source_hash": "sha256:f5e025efa8baf0186c5dc486c844aa2ec3bea900ff57f2b70eb99c08ebe1119c",
+  "answer_type": "verbatim",
+  "primary_domain": 2,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:55:00Z",
+  "modified_at": null
+}

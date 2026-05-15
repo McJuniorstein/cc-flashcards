@@ -1,0 +1,15 @@
+{
+  "id": "cc-6a1f9b35",
+  "front": "Maximum Tolerable Downtime (MTD)",
+  "back": "The MTD represents the total amount of time the system owner/authorizing official is willing to accept for a mission/business process outage or disruption and includes all impact considerations.",
+  "source_doc": "NIST SP 800-34 Rev 1",
+  "source_section": "Section 3.2.1",
+  "source_excerpt": "The MTD represents the total amount of time the system owner/authorizing official is willing to accept for a mission/business process outage or disruption and includes all impact considerations.",
+  "source_hash": "sha256:ed6e7498ed46ca642dde37c00c36b8a8478e67b3327f3d61acad13a1a8e0f218",
+  "answer_type": "verbatim",
+  "primary_domain": 2,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:55:00Z",
+  "modified_at": null
+}

@@ -1,0 +1,15 @@
+{
+  "id": "cc-d4c92a18",
+  "front": "Resilience",
+  "back": "Resilience is the ability to quickly adapt and recover from any known or unknown changes to the environment.",
+  "source_doc": "NIST SP 800-34 Rev 1",
+  "source_section": "Section 2.1",
+  "source_excerpt": "Resilience is the ability to quickly adapt and recover from any known or unknown changes to the environment.",
+  "source_hash": "sha256:ed6e7498ed46ca642dde37c00c36b8a8478e67b3327f3d61acad13a1a8e0f218",
+  "answer_type": "verbatim",
+  "primary_domain": 2,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:55:00Z",
+  "modified_at": null
+}

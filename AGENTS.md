@@ -30,8 +30,9 @@ Every card declares its `answer_type`.
 ### `verbatim` (preferred &mdash; target >=90% of cards)
 
 - `back` is **byte-identical** to `source_excerpt`
-- `source_excerpt` is pulled directly from the extracted source document
-- Verification is a string equality check plus a source-hash match. No model judgement involved.
+- `source_excerpt` is the clean human-readable definition text as it appears in the extracted source document, with Marker's extraction artifacts (footnote markers, page-anchor spans, markdown emphasis around terms) removed
+- The verifier checks (a) that `source_excerpt` appears as a substring of the extracted Markdown **after normalizing those same artifacts on both sides**, and (b) that `back == source_excerpt` byte-for-byte. Normalization applies only to the substring search; `back == source_excerpt` stays strict.
+- No model judgement involved.
 
 ### `paraphrased` (exception &mdash; minimise)
 

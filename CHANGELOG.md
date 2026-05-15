@@ -36,3 +36,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **NIST SP 800-34 Rev 1** &mdash; Contingency Planning Guide (423KB MD)
   - **NIST SP 800-53 Rev 5** &mdash; Security and Privacy Controls (1.8MB MD)
   - **NIST SP 800-61 Rev 2** &mdash; Computer Security Incident Handling Guide (246KB MD)
+- 29 more cards drafted spanning four sources:
+  - **From SP 800-27 Rev A (10 cards, Domains 1, 3, 4):** Access Control, Accountability, Assurance, Authentication, Authorization, Denial of Service, Identity, Risk Management (paraphrased &mdash; extraction silently dropped a hyphen), Security Policy, Threat
+  - **From SP 800-34 Rev 1 (10 cards, Domain 2):** Resilience, BCP, COOP Plan, Cyber Incident Response Plan, DRP, ISCP, OEP, MTD, RTO, RPO
+  - **From SP 800-61 Rev 2 (3 cards, Domain 2):** Event, Adverse Event, Computer Security Incident
+  - **From CSF 2.0 / CSWP 29 (6 cards, Domain 1):** the six CSF Functions &mdash; GOVERN, IDENTIFY, PROTECT, DETECT, RESPOND, RECOVER
+- `scripts/verify.py` gained a normalization layer for Marker extraction artifacts: footnote markers (`<sup>N</sup>`), page-anchor spans, footnote-ref markdown links (`[N](#page-X)`), bold/italic emphasis around terms, and PDF line-break hyphenation (`word-\n\nword` &rarr; `word-word`). Applied only to the substring-in-extract check; `back == source_excerpt` stays strict.
+- `AGENTS.md` updated to document the normalization step
+- Deck stands at 52 cards: 50 verbatim-verified, 2 paraphrased awaiting human PR review (Confidentiality, Risk Management)

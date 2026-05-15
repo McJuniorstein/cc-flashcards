@@ -56,6 +56,43 @@ VALID_STATUSES = {"draft", "verified", "active", "deprecated"}
 ID_RE = re.compile(r"^cc-[a-z0-9]{6,}$")
 HASH_RE = re.compile(r"^sha256:[0-9a-f]{64}$")
 
+# Marker emits several deterministic artifacts that aren't semantic content:
+#   <sup>N</sup>                footnote markers
+#   <span id="..."></span>      page-anchor spans
+#   [N](#page-A-B)              footnote-reference markdown links
+#   **bold** / *italic*         emphasis around terms
+# We normalize both sides of the substring check so a card's source_excerpt
+# can store the clean human-readable text without forcing every footnoted
+# or italicized definition into the paraphrased path.
+_SUP_RE = re.compile(r"<sup>[^<]*</sup>")
+_SPAN_RE = re.compile(r"<span [^>]*></span>")
+_FOOTNOTE_LINK_RE = re.compile(r"\[\d+\]\(#page-[\w-]+\)")
+_BOLD_RE = re.compile(r"\*\*([^*\n]+?)\*\*")
+_ITALIC_RE = re.compile(r"\*([^*\n]+?)\*")
+# When a PDF wraps a hyphenated compound across a line break, Marker emits
+# "time-\n\ncritical". After whitespace collapse that becomes "time- critical".
+# We re-join "<word-char>-<whitespace>" so legitimate compounds like
+# "time-critical" or "after-action" match again. Standalone list-marker
+# hyphens are not matched because they aren't preceded by a word character.
+_HYPHEN_BREAK_RE = re.compile(r"(\w-)\s+")
+_WS_RE = re.compile(r"\s+")
+
+
+def normalize_for_substring_check(text: str) -> str:
+    """Strip extraction artifacts and collapse whitespace.
+
+    Strict byte-equality between back and source_excerpt is NOT affected -
+    this only relaxes the "excerpt appears in extracted markdown" check.
+    """
+    text = _SUP_RE.sub("", text)
+    text = _SPAN_RE.sub("", text)
+    text = _FOOTNOTE_LINK_RE.sub("", text)
+    text = _BOLD_RE.sub(r"\1", text)
+    text = _ITALIC_RE.sub(r"\1", text)
+    text = _HYPHEN_BREAK_RE.sub(r"\1", text)
+    text = _WS_RE.sub(" ", text)
+    return text.strip()
+
 
 class CardError(Exception):
     """A check the verifier owns failed for this card."""
@@ -143,8 +180,8 @@ def verify_card(path: Path, known_sources: dict[str, Path]) -> tuple[str, str]:
         return "paraphrased", "paraphrased card - human PR review required"
 
     # answer_type == verbatim
-    if excerpt not in md_text:
-        return "fail", "source_excerpt not found as substring in extracted source"
+    if normalize_for_substring_check(excerpt) not in normalize_for_substring_check(md_text):
+        return "fail", "source_excerpt not found in extracted source (even after normalization)"
     if card["back"] != excerpt:
         return "fail", "back != source_excerpt (verbatim cards must match byte-for-byte)"
 

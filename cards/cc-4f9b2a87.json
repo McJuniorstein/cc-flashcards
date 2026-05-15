@@ -1,0 +1,15 @@
+{
+  "id": "cc-4f9b2a87",
+  "front": "Recovery Point Objective (RPO)",
+  "back": "The RPO represents the point in time, prior to a disruption or system outage, to which mission/business process data can be recovered (given the most recent backup copy of the data) after an outage.",
+  "source_doc": "NIST SP 800-34 Rev 1",
+  "source_section": "Section 3.2.1",
+  "source_excerpt": "The RPO represents the point in time, prior to a disruption or system outage, to which mission/business process data can be recovered (given the most recent backup copy of the data) after an outage.",
+  "source_hash": "sha256:ed6e7498ed46ca642dde37c00c36b8a8478e67b3327f3d61acad13a1a8e0f218",
+  "answer_type": "verbatim",
+  "primary_domain": 2,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:55:00Z",
+  "modified_at": null
+}

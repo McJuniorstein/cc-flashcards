@@ -1,0 +1,15 @@
+{
+  "id": "cc-7f8e1b4a",
+  "front": "Denial of Service",
+  "back": "The prevention of authorized access to resources or the delaying of time-critical operations.",
+  "source_doc": "NIST SP 800-27 Rev A",
+  "source_section": "Appendix A",
+  "source_excerpt": "The prevention of authorized access to resources or the delaying of time-critical operations.",
+  "source_hash": "sha256:1da98b1bdce1125ef1d894f692d3d4a7c140356f6a6dee3b4d2771c9f0ba8153",
+  "answer_type": "verbatim",
+  "primary_domain": 4,
+  "secondary_domains": [5],
+  "status": "draft",
+  "created_at": "2026-05-15T03:55:00Z",
+  "modified_at": null
+}

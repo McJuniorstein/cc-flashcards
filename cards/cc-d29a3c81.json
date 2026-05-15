@@ -1,0 +1,15 @@
+{
+  "id": "cc-d29a3c81",
+  "front": "Event",
+  "back": "An event is any observable occurrence in a system or network.",
+  "source_doc": "NIST SP 800-61 Rev 2",
+  "source_section": "Section 2.1",
+  "source_excerpt": "An event is any observable occurrence in a system or network.",
+  "source_hash": "sha256:f5e025efa8baf0186c5dc486c844aa2ec3bea900ff57f2b70eb99c08ebe1119c",
+  "answer_type": "verbatim",
+  "primary_domain": 2,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:55:00Z",
+  "modified_at": null
+}

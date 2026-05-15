@@ -1,0 +1,15 @@
+{
+  "id": "cc-a3e2c918",
+  "front": "Cyber Incident Response Plan",
+  "back": "The cyber incident response plan establishes procedures to address cyber attacks against an organization's information system(s).",
+  "source_doc": "NIST SP 800-34 Rev 1",
+  "source_section": "Section 2.2.5",
+  "source_excerpt": "The cyber incident response plan establishes procedures to address cyber attacks against an organization's information system(s).",
+  "source_hash": "sha256:ed6e7498ed46ca642dde37c00c36b8a8478e67b3327f3d61acad13a1a8e0f218",
+  "answer_type": "verbatim",
+  "primary_domain": 2,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:55:00Z",
+  "modified_at": null
+}

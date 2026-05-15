@@ -1,0 +1,15 @@
+{
+  "id": "cc-a5d29c7f",
+  "front": "Authorization",
+  "back": "The granting or denying of access rights to a user, program, or process.",
+  "source_doc": "NIST SP 800-27 Rev A",
+  "source_section": "Appendix A",
+  "source_excerpt": "The granting or denying of access rights to a user, program, or process.",
+  "source_hash": "sha256:1da98b1bdce1125ef1d894f692d3d4a7c140356f6a6dee3b4d2771c9f0ba8153",
+  "answer_type": "verbatim",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:55:00Z",
+  "modified_at": null
+}

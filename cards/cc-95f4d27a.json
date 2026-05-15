@@ -1,0 +1,15 @@
+{
+  "id": "cc-95f4d27a",
+  "front": "Disaster Recovery Plan (DRP)",
+  "back": "A DRP is an information system-focused plan designed to restore operability of the target system, application, or computer facility infrastructure at an alternate site after an emergency.",
+  "source_doc": "NIST SP 800-34 Rev 1",
+  "source_section": "Section 2.2.6",
+  "source_excerpt": "A DRP is an information system-focused plan designed to restore operability of the target system, application, or computer facility infrastructure at an alternate site after an emergency.",
+  "source_hash": "sha256:ed6e7498ed46ca642dde37c00c36b8a8478e67b3327f3d61acad13a1a8e0f218",
+  "answer_type": "verbatim",
+  "primary_domain": 2,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-15T03:55:00Z",
+  "modified_at": null
+}
