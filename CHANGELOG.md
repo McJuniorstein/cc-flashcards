@@ -30,3 +30,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - **Risk fundamentals:** Vulnerability, Threat Source, Threat Event
   - **Threats & malware:** Malicious Hacker, Malicious Code, Virus, Trojan Horse, Worm, Logic Bomb, Ransomware, Social Engineering, Advanced Persistent Threat
 - Deck stands at 23 cards: 22 verbatim-verified, 1 paraphrased awaiting human PR review
+- All five remaining planned NIST sources added and extracted:
+  - **NIST CSWP 29** &mdash; The NIST Cybersecurity Framework (CSF) 2.0 (81KB MD)
+  - **NIST SP 800-27 Rev A** &mdash; Engineering Principles for IT Security (withdrawn by NIST but cited by ISC2) (81KB MD)
+  - **NIST SP 800-34 Rev 1** &mdash; Contingency Planning Guide (423KB MD)
+  - **NIST SP 800-53 Rev 5** &mdash; Security and Privacy Controls (1.8MB MD)
+  - **NIST SP 800-61 Rev 2** &mdash; Computer Security Incident Handling Guide (246KB MD)

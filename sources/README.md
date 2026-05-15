@@ -16,14 +16,13 @@ This directory holds the authoritative source documents that every card cites.
 |---|---|---|---|
 | NIST SP 1308 | NIST Cybersecurity Framework 2.0: Cybersecurity, Enterprise Risk Management, and Workforce Management Quick-Start Guide | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1308.pdf | 2026-05-15 |
 | NIST SP 800-12 Rev 1 | An Introduction to Information Security | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-12r1.pdf | 2026-05-15 |
+| NIST CSWP 29 | The NIST Cybersecurity Framework (CSF) 2.0 | https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf | 2026-05-15 |
+| NIST SP 800-27 Rev A | Engineering Principles for Information Technology Security (A Baseline for Achieving Security) &mdash; *withdrawn by NIST but still cited by ISC2* | https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-27ra.pdf | 2026-05-15 |
+| NIST SP 800-34 Rev 1 | Contingency Planning Guide for Federal Information Systems | https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf | 2026-05-15 |
+| NIST SP 800-53 Rev 5 | Security and Privacy Controls for Information Systems and Organizations | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf | 2026-05-15 |
+| NIST SP 800-61 Rev 2 | Computer Security Incident Handling Guide | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf | 2026-05-15 |
 
-Still to add (per `docs/planning/`):
-
-- NIST CSF 2.0 (the framework itself; SP 1308 above is the companion Quick-Start Guide)
-- NIST SP 800-27 Rev A (withdrawn by NIST but still cited by ISC2)
-- NIST SP 800-53 Rev 5
-- NIST SP 800-61 Rev 2
-- NIST SP 800-34
+All planned sources are now in place.
 
 ## Reproducing the source set
 
