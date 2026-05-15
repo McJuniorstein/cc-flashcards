@@ -1,4 +1,4 @@
-This is a surprisingly disciplined planning doc. Most people start with “what JavaScript framework should I overengineer at 2AM” and only later realize the content is garbage. You did the opposite. Good. That’s the correct order for a cert-prep tool. 
+This is a surprisingly disciplined planning doc. Most people start with “what JavaScript framework should I overengineer at 2AM” and only later realize the content is garbage. You did the opposite. Good. That’s the correct order for a cert-prep tool.
 
 The biggest thing: your *process architecture* is stronger than your current *content governance*. That’s where I’d tighten things before GUI work.
 
@@ -104,7 +104,7 @@ This is a big one.
 
 NIST definitions evolve.
 
-Your repo stores PDFs, which is good. 
+Your repo stores PDFs, which is good.
 
 But you also need:
 
@@ -130,7 +130,7 @@ You want immutable provenance.
 
 You currently enforce:
 
-> correct domain assignment (1 through 5) 
+> correct domain assignment (1 through 5)
 
 Cybersecurity concepts overlap constantly.
 
@@ -187,7 +187,7 @@ This matters for:
 
 ## 6. Define “acceptable paraphrase tolerance”
 
-Right now this is underspecified. 
+Right now this is underspecified.
 
 That’s dangerous because different reviewers will interpret it differently.
 
@@ -216,7 +216,7 @@ That’s not “close enough.” That’s how people fail cert exams and configu
 
 You currently check:
 
-> “Does the card contradict another card?” 
+> “Does the card contradict another card?”
 
 You also need:
 
@@ -264,7 +264,7 @@ This prevents deck bloat.
 
 You say:
 
-> no inline scripts/styles 
+> no inline scripts/styles
 
 Good.
 
@@ -287,7 +287,7 @@ Otherwise future-you at 1:17AM will say:
 
 You correctly mention:
 
-> localStorage is untrusted 
+> localStorage is untrusted
 
 Good catch actually — most people miss that.
 
@@ -335,7 +335,7 @@ Tagging helps future spaced repetition enormously.
 
 # 12. Add “source freshness review cadence”
 
-You already mention source drift. 
+You already mention source drift.
 
 But operationally define it.
 
@@ -454,4 +454,3 @@ If you nail the dataset architecture now, future:
 If you rush schema design now, you’ll rebuild the foundation later while swearing at yourself like an exhausted aircraft mechanic fighting a stripped screw somebody painted over in 1998.
 
 Which, frankly, is exactly what this kind of bug feels like.
-
