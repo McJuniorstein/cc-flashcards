@@ -8,8 +8,10 @@
   "source_hash": "sha256:6cb7d28d4a97ac083289ce0709859fbe19d1fa91592dc619982a43e77cd3af2b",
   "answer_type": "verbatim",
   "primary_domain": 1,
-  "secondary_domains": [2],
-  "status": "draft",
+  "secondary_domains": [
+    2
+  ],
+  "status": "verified",
   "created_at": "2026-05-15T03:55:00Z",
-  "modified_at": null
+  "modified_at": "2026-05-16T16:01:22Z"
 }

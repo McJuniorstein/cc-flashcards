@@ -27,6 +27,7 @@ Verifies every card under [`cards/`](../cards/) against the extracted NIST sourc
 ```
 python scripts/verify.py                          # verify every card
 python scripts/verify.py cards/cc-XXXXXXXX.json   # verify one
+python scripts/verify.py --promote                # verify, then flip passing verbatim drafts to verified
 ```
 
 **What it checks**
@@ -36,3 +37,7 @@ python scripts/verify.py cards/cc-XXXXXXXX.json   # verify one
 - `paraphrased` cards: defers to human PR review per [`AGENTS.md`](../AGENTS.md); reported as `[para]` so they aren't silently approved
 
 Exit code is non-zero if any card fails a check the verifier owns.
+
+**`--promote`**
+
+With `--promote`, after verification any card that (a) passes as verbatim and (b) currently has `status: "draft"` is rewritten in place with `status: "verified"` and `modified_at` set to the current UTC time. Paraphrased and failed cards are never touched &mdash; paraphrased cards still require human PR review per `AGENTS.md`. This covers verification-checklist items 1 (source match), 2 (citation accuracy, partial), and 3 (source freshness) from `AGENTS.md`. Items 4&ndash;6 (domain assignment correctness, semantic dupes, unambiguous front) rely on author judgment at write-time and are not enforced here.

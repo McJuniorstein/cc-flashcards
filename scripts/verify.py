@@ -33,6 +33,7 @@ import hashlib
 import json
 import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -198,6 +199,11 @@ def main() -> int:
         type=Path,
         help="Card JSON file(s). If omitted, verifies every cards/cc-*.json (schema.json is excluded by glob).",
     )
+    parser.add_argument(
+        "--promote",
+        action="store_true",
+        help="After verifying, flip any passing verbatim card whose status is 'draft' to 'verified' and set modified_at to the current UTC time. Paraphrased and failed cards are never touched.",
+    )
     args = parser.parse_args()
 
     if args.paths:
@@ -218,6 +224,8 @@ def main() -> int:
 
     counts = {"ok": 0, "paraphrased": 0, "fail": 0}
     failures: list[tuple[Path, str]] = []
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ") if args.promote else None
+    promoted = 0
 
     for card_path in targets:
         status, message = verify_card(card_path, known_sources)
@@ -226,6 +234,13 @@ def main() -> int:
         print(f"{marker} {card_path.name}: {message}")
         if status == "fail":
             failures.append((card_path, message))
+        elif status == "ok" and args.promote:
+            card = json.loads(card_path.read_text())
+            if card.get("status") == "draft":
+                card["status"] = "verified"
+                card["modified_at"] = now
+                card_path.write_text(json.dumps(card, indent=2, ensure_ascii=False) + "\n")
+                promoted += 1
 
     total = sum(counts.values())
     print(
@@ -233,6 +248,8 @@ def main() -> int:
         f"{counts['paraphrased']} awaiting human review, "
         f"{counts['fail']} failed"
     )
+    if args.promote:
+        print(f"promoted {promoted} draft(s) to verified")
 
     return 0 if counts["fail"] == 0 else 1
 
