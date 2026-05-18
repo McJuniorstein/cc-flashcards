@@ -1,0 +1,16 @@
+{
+  "id": "cc-4589bd9d",
+  "front": "Object",
+  "back": "Passive system-related entity, including devices, files, records, tables, processes, programs, and domains that contain or receive information. Access to an object (by a subject) implies access to the information it contains.",
+  "source_doc": "NIST SP 800-53 Rev 5",
+  "source_section": "Appendix A",
+  "source_chain": [],
+  "source_excerpt": "Passive system-related entity, including devices, files, records, tables, processes, programs, and domains that contain or receive information. Access to an object (by a subject) implies access to the information it contains.",
+  "source_hash": "sha256:5aa19dd6214e8641682bc4ddf28c3cffb4e60d4d18fbaae4155dd4420cf0b8c6",
+  "answer_type": "verbatim",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "verified",
+  "created_at": "2026-05-18T13:04:46Z",
+  "modified_at": "2026-05-18T13:05:06Z"
+}
