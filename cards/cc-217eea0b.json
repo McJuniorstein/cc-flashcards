@@ -1,0 +1,18 @@
+{
+  "id": "cc-217eea0b",
+  "front": "Role-Based Access Control (RBAC)",
+  "back": "Access control based on user roles (i.e., a collection of access authorizations a user receives based on an explicit or implicit assumption of a given role). Role permissions may be inherited through a role hierarchy and typically reflect the permissions needed to perform defined functions within an organization. A given role may apply to a single individual or to several individuals.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "NIST SP 800-53 Rev 4"
+  ],
+  "source_excerpt": "Access control based on user roles (i.e., a collection of access authorizations a user receives based on an explicit or implicit assumption of a given role). Role permissions may be inherited through a role hierarchy and typically reflect the permissions needed to perform defined functions within an organization. A given role may apply to a single individual or to several individuals.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T22:47:23Z",
+  "modified_at": null
+}

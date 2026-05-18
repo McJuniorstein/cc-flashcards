@@ -1,0 +1,18 @@
+{
+  "id": "cc-f7ed3c07",
+  "front": "Firewall",
+  "back": "A gateway that limits access between networks in accordance with local security policy.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "NIST SP 800-32"
+  ],
+  "source_excerpt": "A gateway that limits access between networks in accordance with local security policy.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 4,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T22:47:23Z",
+  "modified_at": null
+}

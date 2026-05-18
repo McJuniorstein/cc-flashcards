@@ -1,0 +1,16 @@
+{
+  "id": "cc-c8f67a49",
+  "front": "Attribute-Based Access Control (ABAC)",
+  "back": "Access control based on attributes associated with and about subjects, objects, targets, initiators, resources, or the environment. An access control rule set defines the combination of attributes under which an access may take place.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [],
+  "source_excerpt": "Access control based on attributes associated with and about subjects, objects, targets, initiators, resources, or the environment. An access control rule set defines the combination of attributes under which an access may take place.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T22:47:23Z",
+  "modified_at": null
+}

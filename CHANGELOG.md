@@ -51,3 +51,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AGENTS.md`: replaced "Attribute to the originating document, not the navigator" with "Record the source-attribution chain".
 - `scripts/verify.py`: validates the shape of `source_chain` when present (array of unique non-empty strings). Does not enforce that a chain be recorded &mdash; spotting unrecorded attributions stays a human-review job.
 - Re-verified all 52 cards under v1.1; no card data changes were required by this policy bump.
+- **D3 batch from SP 800-53 Rev 5 glossary (8 verbatim, all promoted):** Least Privilege, Mandatory Access Control, Logical Access Control System, Physical Access Control System, Identifier, Subject, Object, Security Domain. `source_chain` populated where the 800-53r5 glossary cites another publication (CNSSI 4009, SP 800-116, FIPS 201-2). First batch drawn from the previously untapped 800-53r5 source. Deck went from 52 to 60 cards.
+- **CNSSI 4009 (April 6, 2015) added as a non-NIST source.** US Government work, public domain. Used because NIST glossaries are thin on access-control and networking primitives the CC exam expects (D4 and parts of D3). Downloaded from rmf.org mirror (cnss.gov landing page is non-direct). Extracted with `scripts/extract.py`; 378KB markdown, hash `sha256:666c24d6...`.
+- **800-53r5 extraction repaired:** Marker had dropped a hyphen across a line break in the Discretionary Access Control glossary entry, producing `"newlycreated"` where the PDF reads `"newly-created"`. Fixed in place; `sources/extracted/NIST.SP.800-53r5/NIST.SP.800-53r5.sha256` recomputed; the 8 D3 cards from the prior batch had their `source_hash` updated to match. All cards re-verified post-fix.
+- **D3 + D4 gaps fill (15 draft cards, status: draft, awaiting PR review):**
+  - D3 from CNSSI 4009: Discretionary Access Control (DAC, paraphrased), Role-Based Access Control (RBAC), Attribute-Based Access Control (ABAC), Privileged Account, Privileged User, Need-to-Know (paraphrased). `source_chain` populated where CNSSI cites NIST SP 800-53 Rev 4, E.O. 13526, etc. — Rev 4 kept literal per v1.1 historical-provenance rule, despite Rev 5 being current-effective.
+  - D3 from 800-53r5 AC-5 Discussion: Separation of Duties (paraphrased).
+  - D4 from CNSSI 4009: Firewall, Demilitarized Zone (DMZ), Virtual Private Network (VPN, paraphrased), Intrusion Detection System (IDS, paraphrased), Intrusion Prevention System (IPS), Man-in-the-Middle Attack (MITM).
+  - D4 stretch (flagged in PR for reviewer decision): OSI Model and TCP/IP Model. CNSSI 4009 only contains the acronym expansions; the layer counts are textbook knowledge not present in our source corpus. Filed paraphrased with `source_chain` pointing at ISO/IEC 7498-1 and IETF RFC 1122 respectively.
+  - Staging file at `cards/drafts/2026-05-18_D3-D4-gaps.md` records the rationale, source_excerpts, and flags for PR review.
+- Deck stands at 75 cards: 60 verified (58 verbatim + 2 paraphrased pre-existing), 15 draft (7 verbatim + 8 paraphrased — pending PR review).
+- Domain coverage shift: D1=25, D2=13, **D3=19 (+7 this session, +8 from PR #8)**, **D4=9 (+8 this session, was 1)**, D5=9. D4 is no longer single-digit-card thin.
+
+### Known gaps still open
+- **Rule-Based Access Control** — not defined in CNSSI 4009 or any existing source.
+- **Packet, Frame, Port (as networking concepts)** — only compound terms exist in CNSSI 4009. NIST SP 800-94 / RFC-level source addition would unblock.
+- **VLAN, Network Segmentation** — not in CNSSI 4009. Likely covered by NIST SP 800-125B or 800-41.
+- **D5 still light** — 9 cards covers Sec Ops thinly. SP 800-53 Rev 5 AU/CM/IR/SI families are untapped.
+- **OSI Model / TCP/IP Model** — filed but flagged; awaiting reviewer decision on the provenance stretch.

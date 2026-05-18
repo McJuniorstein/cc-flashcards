@@ -1,0 +1,18 @@
+{
+  "id": "cc-3ae92575",
+  "front": "Discretionary Access Control (DAC)",
+  "back": "An access control policy that lets the owner of information decide who can access it and what they can do with it. Mandatory access controls restrict this capability.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "NIST SP 800-53 Rev 4"
+  ],
+  "source_excerpt": "An access control policy that is enforced over all subjects and objects in an information system where the policy specifies that a subject that has been granted access to information can do one or more of the following: (i) pass the information to other subjects or objects; (ii) grant its privileges to other subjects; (iii) change security attributes on subjects, objects, information systems, or system components; (iv) choose the security attributes to be associated with newly-created or revised objects; or (v) change the rules governing access control. Mandatory access controls restrict this capability.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "paraphrased",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T22:47:23Z",
+  "modified_at": null
+}
