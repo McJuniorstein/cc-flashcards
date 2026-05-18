@@ -34,11 +34,18 @@
     "source_doc": {
       "type": "string",
       "minLength": 1,
-      "description": "NIST publication identifier. Example: 'NIST SP 800-27 Rev A'."
+      "description": "NIST publication identifier you actually read and hashed. Example: 'NIST SP 800-27 Rev A'."
     },
     "source_section": {
       "type": ["string", "null"],
       "description": "Optional section reference within source_doc. Example: 'Section 2.3'."
+    },
+    "source_chain": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "default": [],
+      "description": "Ordered chain of provenance from source_doc back to the originating publication. Element 0 is the document source_doc references; the last element is the originating document. Example: source_doc='NIST SP 800-12 Rev 1', source_chain=['CNSSI 4009']."
     },
     "source_excerpt": {
       "type": "string",
