@@ -4,6 +4,9 @@
   "back": "(1) Facts or ideas, which can be represented (encoded) as various forms of data; (2) Knowledge (e.g., data, instructions) in any medium or form that can be communicated between system entities.",
   "source_doc": "NIST SP 800-12 Rev 1",
   "source_section": "Section 1.4",
+  "source_chain": [
+    "CNSSI 4009"
+  ],
   "source_excerpt": "(1) Facts or ideas, which can be represented (encoded) as various forms of data; (2) Knowledge (e.g., data, instructions) in any medium or form that can be communicated between system entities.",
   "source_hash": "sha256:0669500e913012bf86687d9b1b362b0e64ed5e8d46a45c6ae434c537b425ce51",
   "answer_type": "verbatim",
@@ -11,5 +14,5 @@
   "secondary_domains": [],
   "status": "verified",
   "created_at": "2026-05-15T03:35:00Z",
-  "modified_at": "2026-05-16T16:01:22Z"
+  "modified_at": "2026-05-18T05:59:14Z"
 }
