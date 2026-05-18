@@ -1,0 +1,18 @@
+{
+  "id": "cc-309f9a59",
+  "front": "Man-in-the-Middle Attack (MITM)",
+  "back": "A form of active wiretapping attack in which the attacker intercepts and selectively modifies communicated data to masquerade as one or more of the entities involved in a communication association.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "IETF RFC 4949 Ver 2"
+  ],
+  "source_excerpt": "A form of active wiretapping attack in which the attacker intercepts and selectively modifies communicated data to masquerade as one or more of the entities involved in a communication association.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 4,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T22:47:23Z",
+  "modified_at": null
+}

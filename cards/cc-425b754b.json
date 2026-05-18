@@ -1,0 +1,18 @@
+{
+  "id": "cc-425b754b",
+  "front": "Need-to-Know",
+  "back": "The requirement that access to classified information be granted only to individuals who need it to perform their official duties.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "E.O. 13526"
+  ],
+  "source_excerpt": "A determination within the executive branch in accordance with directives issued pursuant to this order that a prospective recipient requires access to specific classified information in order to perform or assist in a lawful and authorized governmental function.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "paraphrased",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T22:47:23Z",
+  "modified_at": null
+}

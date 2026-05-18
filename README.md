@@ -19,21 +19,21 @@ People preparing for the CC exam currently choose between paid practice tools, f
 
 See [`AGENTS.md`](./AGENTS.md) for the verification contract.
 
-## Status (as of 2026-05-15)
+## Status (as of 2026-05-18)
 
 | Area | State |
 |---|---|
-| Verification protocol (`AGENTS.md`) | Locked at v1.0 |
+| Verification protocol (`AGENTS.md`) | Locked at v1.1 |
 | UX principles (`docs/ux-principles.md`) | Locked at v1.0 |
-| Source corpus | All 7 planned NIST PDFs downloaded and extracted to Markdown |
+| Source corpus | 7 NIST PDFs + CNSSI 4009 (2015), all extracted to Markdown |
 | Card schema | Defined and in use |
 | Extraction pipeline (`scripts/extract.py`) | Working |
-| Verifier (`scripts/verify.py`) | Working, with normalization layer for Marker artifacts |
-| **Deck** | **~50 draft cards across all 5 CC domains. Not exhaustive.** |
+| Verifier (`scripts/verify.py`) | Working, with normalization layer for Marker artifacts; validates `source_chain` shape |
+| **Deck** | **75 cards: 60 verified, 15 draft (pending PR review). Covers all 5 CC domains; D1 and D3 are best-covered, D4 went from 1 to 9 with the CNSSI 4009 addition.** |
 | **App** | **Not started.** No framework chosen, no build, no deployment. |
 | **Netlify deployment** | **Not deployed.** Pending content completion and the security checklist. |
 
-The deck is intentionally incomplete in this phase &mdash; it exists to validate the pipeline end-to-end before scaling. Domain 4 (Network Security) is the thinnest because NIST glossaries don't define common networking primitives (firewall, IDS/IPS, VPN, etc.); a non-NIST source will eventually be required to round it out.
+The deck is intentionally incomplete in this phase &mdash; it exists to validate the pipeline end-to-end before scaling. **Domain weighting note:** ISC2 CC exam weights are roughly D1 26% / D4 24% / D3 22% / D5 18% / D2 10%. Current deck distribution (D1=25, D2=13, D3=19, D4=9, D5=9) over-weights D1 and D2 and under-weights D4 and D5; future batches should skew toward D4 and D5 to bring the deck closer to exam emphasis. Known content gaps and provenance flags are tracked in `CHANGELOG.md`.
 
 ## Project structure
 

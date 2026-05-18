@@ -1,0 +1,16 @@
+{
+  "id": "cc-ae5fac0c",
+  "front": "Virtual Private Network (VPN)",
+  "back": "A protected network link over a shared or public network that uses tunneling, encryption, and endpoint address translation to give the impression of a dedicated line.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [],
+  "source_excerpt": "Protected information system link utilizing tunneling, security controls (see information assurance (IA)), and endpoint address translation giving the impression of a dedicated line.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "paraphrased",
+  "primary_domain": 4,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T22:47:23Z",
+  "modified_at": null
+}

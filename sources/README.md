@@ -21,8 +21,9 @@ This directory holds the authoritative source documents that every card cites.
 | NIST SP 800-34 Rev 1 | Contingency Planning Guide for Federal Information Systems | https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-34r1.pdf | 2026-05-15 |
 | NIST SP 800-53 Rev 5 | Security and Privacy Controls for Information Systems and Organizations | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf | 2026-05-15 |
 | NIST SP 800-61 Rev 2 | Computer Security Incident Handling Guide | https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf | 2026-05-15 |
+| CNSSI 4009 (April 6, 2015) | Committee on National Security Systems (CNSS) Glossary &mdash; *non-NIST source; US Government work in the public domain. Used because NIST glossaries are thin on access-control and networking primitives the CC exam expects.* | https://rmf.org/wp-content/uploads/2017/10/CNSSI-4009.pdf | 2026-05-18 |
 
-All planned sources are now in place.
+Last source added 2026-05-18 (CNSSI 4009).
 
 ## Reproducing the source set
 

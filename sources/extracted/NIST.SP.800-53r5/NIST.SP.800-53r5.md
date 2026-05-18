@@ -12898,7 +12898,7 @@ A planned, systematic set of multidisciplinary activities that seek to identify,
 
 ### **discretionary access control**
 
-An access control policy that is enforced over all subjects and objects in a system where the policy specifies that a subject that has been granted access to information can do one or more of the following: pass the information to other subjects or objects; grant its privileges to other subjects; change the security attributes of subjects, objects, systems, or system components; choose the security attributes to be associated with newlycreated or revised objects; or change the rules governing access control. Mandatory access controls restrict this capability.
+An access control policy that is enforced over all subjects and objects in a system where the policy specifies that a subject that has been granted access to information can do one or more of the following: pass the information to other subjects or objects; grant its privileges to other subjects; change the security attributes of subjects, objects, systems, or system components; choose the security attributes to be associated with newly-created or revised objects; or change the rules governing access control. Mandatory access controls restrict this capability.
 
 #### **disassociability**
 

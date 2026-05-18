@@ -1,0 +1,18 @@
+{
+  "id": "cc-aaaa0001",
+  "front": "OSI Model",
+  "back": "A seven-layer conceptual model of network communication, defined by ISO/IEC 7498-1: Physical, Data Link, Network, Transport, Session, Presentation, and Application.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Annex A — Acronyms",
+  "source_chain": [
+    "ISO/IEC 7498-1"
+  ],
+  "source_excerpt": "OSI Open Systems Interconnection",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "paraphrased",
+  "primary_domain": 4,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T22:47:23Z",
+  "modified_at": null
+}

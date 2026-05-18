@@ -1,0 +1,18 @@
+{
+  "id": "cc-c4dfee65",
+  "front": "Privileged Account",
+  "back": "An information system account with approved authorizations of a privileged user.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "NIST SP 800-53 Rev 4 (adapted)"
+  ],
+  "source_excerpt": "An information system account with approved authorizations of a privileged user.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T22:47:23Z",
+  "modified_at": null
+}
