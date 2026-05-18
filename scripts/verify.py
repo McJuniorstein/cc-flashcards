@@ -145,6 +145,24 @@ def validate_schema(card: dict, path: Path) -> None:
     if source_hash is not None and not HASH_RE.match(source_hash):
         raise CardError(f"source_hash must match {HASH_RE.pattern}")
 
+    source_chain = card.get("source_chain")
+    if source_chain is not None:
+        if not isinstance(source_chain, list):
+            raise CardError(
+                f"source_chain has type {type(source_chain).__name__}, expected list"
+            )
+        seen: set[str] = set()
+        for i, entry in enumerate(source_chain):
+            if not isinstance(entry, str):
+                raise CardError(
+                    f"source_chain[{i}] has type {type(entry).__name__}, expected str"
+                )
+            if not entry:
+                raise CardError(f"source_chain[{i}] is empty")
+            if entry in seen:
+                raise CardError(f"source_chain has duplicate entry {entry!r}")
+            seen.add(entry)
+
 
 def verify_card(path: Path, known_sources: dict[str, Path]) -> tuple[str, str]:
     """Return (status, message) for one card. status in {ok, paraphrased, fail}."""

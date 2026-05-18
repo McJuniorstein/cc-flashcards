@@ -2,7 +2,7 @@
 
 This document is the contract that any agent &mdash; human or AI &mdash; works against when contributing cards to this project. It is intentionally short and prescriptive.
 
-**Protocol version:** 1.0 (2026-05-15)
+**Protocol version:** 1.1 (2026-05-18)
 
 ---
 
@@ -78,16 +78,17 @@ This gives the project a permanent, public audit trail of every editorial decisi
 - For withdrawn NIST publications still cited by ISC2 (notably `SP 800-27 Rev A`): cite them the way ISC2 does. Do not editorialise about withdrawal status.
 - `source_section` is optional but encouraged when the source has clear section structure (e.g., `Section 2.3`)
 
-### Attribute to the originating document, not the navigator
+### Record the source-attribution chain
 
-NIST publications &mdash; especially Quick-Start Guides (QSGs) and Frameworks &mdash; routinely re-quote definitions from other NIST publications. For example, SP 1308 lists "High Value Asset" in its Key Terms but the canonical definition lives in `NIST SP 800-160 Vol. 2 Rev. 1`. A card's `source_doc` field must always point to the **originating** document the definition was written for, not the navigator document that happens to surface it.
+`source_doc` is the publication you actually read and hashed &mdash; the document from `/sources/extracted/` that the definition was lifted from. When that document attributes the definition to another publication (a footnote, an inline citation), record the rest of the chain in `source_chain`, ordered from closest to originating.
 
-If you encounter a definition in a navigator document and the originating document is not yet in `/sources/`, do one of two things:
+Example: SP 800-12r1's definition of Confidentiality is footnoted *"retrieved from CNSSI 4009"*. The card records `source_doc: "NIST SP 800-12 Rev 1"` and `source_chain: ["CNSSI 4009"]`.
 
-1. Download the originating document, add it to `/sources/`, run `scripts/extract.py`, and cite the originating extraction.
-2. Skip the card for now and add the originating document to `/sources/README.md`'s "still to add" list.
+If the chain stacks (navigator A cites navigator B cites originating C), record all of it: `source_chain: ["B", "C"]`. The full provenance chain is therefore `[source_doc, ...source_chain]`; the first element is what you read, the last is the originating document.
 
-Never cite the navigator just because that's where you read the definition.
+`source_hash` and `source_section` stay attached to `source_doc` &mdash; the document you actually read and hashed. Chain entries are bibliographic strings only; they do not need to exist in `/sources/`.
+
+The verifier validates the *shape* of `source_chain` (array of unique non-empty strings) but does not enforce that a chain be recorded; spotting unrecorded attributions is a human-review responsibility for now.
 
 ## Out of scope for this protocol
 

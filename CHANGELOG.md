@@ -44,3 +44,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `scripts/verify.py` gained a normalization layer for Marker extraction artifacts: footnote markers (`<sup>N</sup>`), page-anchor spans, footnote-ref markdown links (`[N](#page-X)`), bold/italic emphasis around terms, and PDF line-break hyphenation (`word-\n\nword` &rarr; `word-word`). Applied only to the substring-in-extract check; `back == source_excerpt` stays strict.
 - `AGENTS.md` updated to document the normalization step
 - Deck stands at 52 cards: 50 verbatim-verified, 2 paraphrased awaiting human PR review (Confidentiality, Risk Management)
+
+### Changed
+- **Protocol bump 1.0 &rarr; 1.1 (2026-05-18):** source attribution now records the chain of provenance you actually traversed. `source_doc` is the publication you read and hashed; the rest of the chain back to the originating document goes in a new optional `source_chain` array. Replaces the prior "attribute to the originating document, not the navigator" rule, which forced fetching originating PDFs before filing cards even when the navigator already quoted them verbatim. Driven by issue #3; surfaced on PR #1 (Confidentiality is footnoted as retrieved from CNSSI 4009, which isn't in `/sources/`).
+- `cards/schema.json`: added optional `source_chain` (array of unique non-empty strings, default `[]`).
+- `AGENTS.md`: replaced "Attribute to the originating document, not the navigator" with "Record the source-attribution chain".
+- `scripts/verify.py`: validates the shape of `source_chain` when present (array of unique non-empty strings). Does not enforce that a chain be recorded &mdash; spotting unrecorded attributions stays a human-review job.
+- Re-verified all 52 cards under v1.1; no card data changes were required by this policy bump.
