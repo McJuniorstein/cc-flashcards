@@ -1,0 +1,16 @@
+{
+  "id": "cc-04a147ed",
+  "front": "Subject",
+  "back": "An individual, process, or device that causes information to flow among objects or change to the system state.",
+  "source_doc": "NIST SP 800-53 Rev 5",
+  "source_section": "Appendix A",
+  "source_chain": [],
+  "source_excerpt": "An individual, process, or device that causes information to flow among objects or change to the system state.",
+  "source_hash": "sha256:5aa19dd6214e8641682bc4ddf28c3cffb4e60d4d18fbaae4155dd4420cf0b8c6",
+  "answer_type": "verbatim",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "verified",
+  "created_at": "2026-05-18T13:04:46Z",
+  "modified_at": "2026-05-18T13:05:06Z"
+}

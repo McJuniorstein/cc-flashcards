@@ -1,0 +1,16 @@
+{
+  "id": "cc-6468f151",
+  "front": "Logical Access Control System",
+  "back": "An automated system that controls an individual's ability to access one or more computer system resources, such as a workstation, network, application, or database. A logical access control system requires the validation of an individual's identity through some mechanism, such as a PIN, card, biometric, or other token. It has the capability to assign different access privileges to different individuals depending on their roles and responsibilities in an organization.",
+  "source_doc": "NIST SP 800-53 Rev 5",
+  "source_section": "Appendix A",
+  "source_chain": [],
+  "source_excerpt": "An automated system that controls an individual's ability to access one or more computer system resources, such as a workstation, network, application, or database. A logical access control system requires the validation of an individual's identity through some mechanism, such as a PIN, card, biometric, or other token. It has the capability to assign different access privileges to different individuals depending on their roles and responsibilities in an organization.",
+  "source_hash": "sha256:5aa19dd6214e8641682bc4ddf28c3cffb4e60d4d18fbaae4155dd4420cf0b8c6",
+  "answer_type": "verbatim",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "verified",
+  "created_at": "2026-05-18T13:04:46Z",
+  "modified_at": "2026-05-18T13:05:06Z"
+}
