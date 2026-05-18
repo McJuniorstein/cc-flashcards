@@ -29,11 +29,21 @@ See [`AGENTS.md`](./AGENTS.md) for the verification contract.
 | Card schema | Defined and in use |
 | Extraction pipeline (`scripts/extract.py`) | Working |
 | Verifier (`scripts/verify.py`) | Working, with normalization layer for Marker artifacts; validates `source_chain` shape |
-| **Deck** | **75 cards: 60 verified, 15 draft (pending PR review). Covers all 5 CC domains; D1 and D3 are best-covered, D4 went from 1 to 9 with the CNSSI 4009 addition.** |
+| **Deck** | **91 cards: 75 verified, 16 draft (pending PR review). Covers all 5 CC domains; D4 went from 1 → 17 across the CNSSI 4009 sessions.** |
 | **App** | **Not started.** No framework chosen, no build, no deployment. |
 | **Netlify deployment** | **Not deployed.** Pending content completion and the security checklist. |
 
-The deck is intentionally incomplete in this phase &mdash; it exists to validate the pipeline end-to-end before scaling. **Domain weighting note:** ISC2 CC exam weights are roughly D1 26% / D4 24% / D3 22% / D5 18% / D2 10%. Current deck distribution (D1=25, D2=13, D3=19, D4=9, D5=9) over-weights D1 and D2 and under-weights D4 and D5; future batches should skew toward D4 and D5 to bring the deck closer to exam emphasis. Known content gaps and provenance flags are tracked in `CHANGELOG.md`.
+### Domain distribution vs exam weighting
+
+| Domain | Cards | Deck % | Exam % | Status |
+|---|---|---|---|---|
+| D1 Security Principles | 25 | 27% | 26% | aligned |
+| D2 BC/DR/IR | 13 | 14% | 10% | slightly over |
+| D3 Access Controls | 19 | 21% | 22% | aligned |
+| D4 Network Security | 17 | 19% | 24% | slightly under |
+| D5 Security Operations | 17 | 19% | 18% | aligned |
+
+The deck is intentionally incomplete in this phase &mdash; it exists to validate the pipeline end-to-end before scaling toward a worthwhile study pack (~110&ndash;130 cards). Known content gaps and provenance flags are tracked in `CHANGELOG.md`.
 
 ## Project structure
 

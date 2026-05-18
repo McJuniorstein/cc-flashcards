@@ -1,0 +1,18 @@
+{
+  "id": "cc-870c9a48",
+  "front": "Configuration Management",
+  "back": "Activities focused on establishing and maintaining the integrity of IT products and systems through control of configuration processes throughout the system development life cycle.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "NIST SP 800-53 Rev 4"
+  ],
+  "source_excerpt": "A collection of activities focused on establishing and maintaining the integrity of information technology products and information systems, through control of processes for initializing, changing, and monitoring the configurations of those products and systems throughout the system development life cycle.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "paraphrased",
+  "primary_domain": 5,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T23:47:39Z",
+  "modified_at": null
+}

@@ -1,0 +1,16 @@
+{
+  "id": "cc-0a530ac8",
+  "front": "Patch Management",
+  "back": "The systematic notification, identification, deployment, installation, and verification of operating system and application software code revisions. These revisions are known as patches, hot fixes, and service packs.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [],
+  "source_excerpt": "The systematic notification, identification, deployment, installation, and verification of operating system and application software code revisions. These revisions are known as patches, hot fixes, and service packs.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 5,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T23:47:39Z",
+  "modified_at": null
+}

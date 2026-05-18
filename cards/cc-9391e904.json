@@ -1,0 +1,16 @@
+{
+  "id": "cc-9391e904",
+  "front": "Wi-Fi Protected Access 2 (WPA2)",
+  "back": "The approved Wi-Fi Alliance interoperable implementation of the IEEE 802.11i security standard. For federal government use it must use FIPS-approved encryption such as AES.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [],
+  "source_excerpt": "The approved Wi-Fi Alliance interoperable implementation of the IEEE 802.11i security standard. For federal government use, the implementation must use federal information processing standards (FIPS) approved encryption, such as advanced encryption standard (AES).",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "paraphrased",
+  "primary_domain": 4,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T23:47:39Z",
+  "modified_at": null
+}
