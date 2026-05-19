@@ -83,3 +83,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **D4 carried forward:** Packet, Frame, Segment/Datagram, Port (well-known/registered/dynamic), IPv4, IPv6, ARP, VLAN, Network Segmentation. None are standalone glossary entries in CNSSI 4009 or any existing source; would need RFC 1122 / NIST SP 800-94 / 800-41 / 800-125B added.
 - **D5 carried forward:** Data Classification, System Hardening, Acceptable Use Policy (AUP). Not in CNSSI 4009 as standalone entries.
 - **OSI Model / TCP/IP Model** flags retained in staging file `cards/drafts/2026-05-18_D3-D4-gaps.md` even after promotion. Reviewer's call to keep stands.
+- **Post-PR-#10 promotion (2026-05-18):** all 16 PR-#10 drafts promoted to `status: "verified"`. 14 verbatim via `verify.py --promote`; 2 paraphrased (WPA2, Configuration Management) flipped manually since human review happened on PR #10. Deck moved to 91 verified / 0 draft.
+- **Three new sources added (2026-05-18):**
+  - **NIST SP 800-94** (Guide to Intrusion Detection and Prevention Systems, 2007) &mdash; downloaded from nvlpubs.nist.gov, 1.1MB PDF, 385KB extracted MD, hash `sha256:4562ebba...`. Unlocks IDPS depth (anomaly vs signature detection, false positives/negatives, HIDS/HIPS, NIDS/NIPS).
+  - **NIST SP 800-41 Rev 1** (Guidelines on Firewalls and Firewall Policy, September 2009) &mdash; nvlpubs.nist.gov, 332KB PDF, 141KB extracted MD, hash `sha256:46fc63d5...`. Unlocks firewall depth (packet filter, stateful inspection, NAT, application-proxy gateway, egress/ingress filtering, deny by default).
+  - **IETF RFC 4949** (Internet Security Glossary v2, August 2007) &mdash; rfc-editor.org PDF rendering, 547KB PDF, 725KB extracted MD, hash `sha256:7b42adb9...`. First IETF source in the corpus. Already cited as the chain source for several existing cards (Jamming, Gateway, MITM); provides authoritative glossary entries for Packet, Datagram, UDP.
+- **D4 primitives + depth batch (16 draft cards, status: draft, awaiting PR review):**
+  - From RFC 4949 (3): Packet, Datagram (paraphrased &mdash; editorial brackets dropped), UDP (paraphrased &mdash; RFC ref dropped). Datagram's `source_chain` records IETF RFC 1983 (quoted source); UDP's records IETF RFC 768.
+  - From SP 800-94 (6): Anomaly-Based Detection, Signature-Based Detection, False Positive, False Negative, HIDS/HIPS, NIDS/NIPS. All organic to 800-94 (empty chain).
+  - From SP 800-41 Rev 1 (7): Packet Filter, Stateful Inspection, NAT, Application-Proxy Gateway, Egress Filtering, Ingress Filtering, Deny by Default. All organic to 800-41r1.
+  - 14 verbatim + 2 paraphrased. Staging file at `cards/drafts/2026-05-18_D4-primitives-batch.md`.
+- Deck stands at **107 cards**: 91 verified (after PR-#10 promotion) + 16 draft (this batch). Verbatim ratio: 94/107 = 88%.
+- Domain coverage shift: D1=25, D2=13, D3=19, **D4=33 (+16 this session, was 17)**, D5=17. D4 is now over-represented (31% deck vs 24% exam) &mdash; an over-correction from being severely under at 1%. Future batches should skew D1/D3/D5.
+
+### Known gaps still open after the D4 primitives batch
+- **Frame, Port (well-known/registered/dynamic), IPv4, IPv6, ARP, VLAN, Network Segmentation** &mdash; surveyed all three new sources, none have these as standalone glossary entries. Would need RFC 826 (ARP), RFC 8200 (IPv6), IEEE 802.1Q or NIST SP 800-125B (VLAN), or RFC 1180 / NIST SP 800-115 (port classifications).
+- **Network Segmentation** surprisingly absent from 800-41r1 narrative as well as glossary.
+- **Rule-Based Access Control** &mdash; still no clean source.
+- **D5 expansion** &mdash; 17 cards is in-range for exam weight but additional batches could draw from 800-53r5 AU/CM/IR/SI families.
+- **D3 slightly under exam weight** (18% deck vs 22% exam). A small follow-on D3 batch would help.

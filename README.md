@@ -25,11 +25,11 @@ See [`AGENTS.md`](./AGENTS.md) for the verification contract.
 |---|---|
 | Verification protocol (`AGENTS.md`) | Locked at v1.1 |
 | UX principles (`docs/ux-principles.md`) | Locked at v1.0 |
-| Source corpus | 7 NIST PDFs + CNSSI 4009 (2015), all extracted to Markdown |
+| Source corpus | 9 NIST PDFs + CNSSI 4009 + IETF RFC 4949, all extracted to Markdown |
 | Card schema | Defined and in use |
 | Extraction pipeline (`scripts/extract.py`) | Working |
 | Verifier (`scripts/verify.py`) | Working, with normalization layer for Marker artifacts; validates `source_chain` shape |
-| **Deck** | **91 cards: 75 verified, 16 draft (pending PR review). Covers all 5 CC domains; D4 went from 1 → 17 across the CNSSI 4009 sessions.** |
+| **Deck** | **107 cards: 91 verified, 16 draft (pending PR review). Covers all 5 CC domains; D4 went from 1 → 33 across three CNSSI 4009 / 800-41 / 800-94 / RFC 4949 sessions.** |
 | **App** | **Not started.** No framework chosen, no build, no deployment. |
 | **Netlify deployment** | **Not deployed.** Pending content completion and the security checklist. |
 
@@ -37,13 +37,13 @@ See [`AGENTS.md`](./AGENTS.md) for the verification contract.
 
 | Domain | Cards | Deck % | Exam % | Status |
 |---|---|---|---|---|
-| D1 Security Principles | 25 | 27% | 26% | aligned |
-| D2 BC/DR/IR | 13 | 14% | 10% | slightly over |
-| D3 Access Controls | 19 | 21% | 22% | aligned |
-| D4 Network Security | 17 | 19% | 24% | slightly under |
-| D5 Security Operations | 17 | 19% | 18% | aligned |
+| D1 Security Principles | 25 | 23% | 26% | aligned |
+| D2 BC/DR/IR | 13 | 12% | 10% | aligned |
+| D3 Access Controls | 19 | 18% | 22% | slightly under |
+| D4 Network Security | 33 | 31% | 24% | over (was severely under; now well-supported) |
+| D5 Security Operations | 17 | 16% | 18% | aligned |
 
-The deck is intentionally incomplete in this phase &mdash; it exists to validate the pipeline end-to-end before scaling toward a worthwhile study pack (~110&ndash;130 cards). Known content gaps and provenance flags are tracked in `CHANGELOG.md`.
+The deck has reached the "worthwhile study pack" range (107 cards, target was 110&ndash;130). D4 is now over-represented vs its exam weight, but that's an over-correction from being at 1% &mdash; D4 content depth is now strong. Future content batches should skew D1, D3, or D5 (or add a few primitive D4 cards once more sources are added). Known content gaps and provenance flags are tracked in `CHANGELOG.md`.
 
 ## Project structure
 
