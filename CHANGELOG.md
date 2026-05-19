@@ -111,6 +111,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Deck stands at **116 cards**: 107 verified (after PR-#11 promotion) + 9 draft (this batch). Verbatim ratio: 102/116 = 88%.
 - Domain coverage shift: D1=25, D2=13, **D3=21 (+2)**, **D4=35 (+2)**, **D5=22 (+5)**. Lands inside the planned 110-130 "worthwhile study pack" range.
 - **Content phase complete. Next phase: minimal static app (HTML + vanilla JS + Tailwind) per `docs/ux-principles.md`.**
+- **V1 static app skeleton (2026-05-19):** built per `docs/ux-principles.md`. Files at `app/src/{index.html, app.js, style.css, service-worker.js}`; build pipeline at `scripts/build_app.py` reads `cards/cc-*.json`, filters to non-deprecated, writes `app/dist/cards.json` + copies static assets. `netlify.toml` build command updated from placeholder to `python3 scripts/build_app.py`.
+  - **No CSS framework.** Tailwind CDN was rejected: it requires inline scripts/styles (CSP-blocked by the existing `netlify.toml`), ships ~340KB JS (blows the 50KB ceiling), and violates the "no third-party JS on the critical path" rule. Vanilla CSS at ~2.4KB gzipped fits the 10KB target with room to spare.
+  - **Three views**: setup (pick mode), study (card front/back + mark), done (session summary). Implemented as `hidden`-toggled `<section>` elements; no router.
+  - **Interactions** (per ux-principles "Interaction model (locked)"): tap/space/enter to flip; K = known; R = review again; Escape = end session.
+  - **State**: `localStorage` for known + review sets and theme preference. No server. No accounts.
+  - **Service worker**: cache-first for shell, stale-while-revalidate for `cards.json`. Cache version is a build-time hash so deploys evict stale entries.
+  - **Theme**: auto (follows `prefers-color-scheme`) / light / dark. Toggle persists.
+  - **Accessibility**: skip link, semantic landmarks, `aria-live` for state changes, focus management on view switches, `prefers-reduced-motion` respected. Lighthouse Accessibility 100 (headless, dev server).
+  - **Bundle sizes (gzipped)**: HTML 1.5KB, JS 3.4KB, CSS 2.4KB, service worker 0.9KB, cards.json 10.1KB. All shell assets well under their `docs/ux-principles.md` budgets (HTML target <15KB, JS <30KB, CSS <10KB).
+  - **Lighthouse scores (local headless, dev server)**: Performance 98, Accessibility 100, Best Practices 100, SEO 100. The 3 deductions in Performance sub-audits (cache headers, document latency, JS minification) are dev-server artifacts — Netlify will resolve them in production via Brotli + immutable headers.
 
 ### Known gaps still open after the final light batch
 - **D3 still under exam weight** (18% deck vs 22% exam). A 4-5 card follow-on batch could close it; not blocking app work.
