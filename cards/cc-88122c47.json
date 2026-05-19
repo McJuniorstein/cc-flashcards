@@ -1,0 +1,16 @@
+{
+  "id": "cc-88122c47",
+  "front": "Access Enforcement",
+  "back": "Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
+  "source_doc": "NIST SP 800-53 Rev 5",
+  "source_section": "AC-3",
+  "source_chain": [],
+  "source_excerpt": "Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.",
+  "source_hash": "sha256:44a04031e41bb2e32fe3b8b94a2b915b0d40c8fb1f2d803e464f3c383b375d5a",
+  "answer_type": "verbatim",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-19T04:36:35Z",
+  "modified_at": null
+}

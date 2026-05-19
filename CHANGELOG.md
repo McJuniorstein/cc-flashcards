@@ -102,3 +102,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Rule-Based Access Control** &mdash; still no clean source.
 - **D5 expansion** &mdash; 17 cards is in-range for exam weight but additional batches could draw from 800-53r5 AU/CM/IR/SI families.
 - **D3 slightly under exam weight** (18% deck vs 22% exam). A small follow-on D3 batch would help.
+- **Post-PR-#11 promotion (2026-05-19):** all 16 PR-#11 drafts promoted to `status: "verified"`. 14 verbatim via `verify.py --promote`; 2 paraphrased (Datagram, UDP) flipped manually. Deck moved to 107 verified / 0 draft.
+- **Final light batch (9 draft cards, status: draft, awaiting PR review):**
+  - D3 (2 verbatim): Access Enforcement (from 800-53r5 AC-3 Control statement), Identification (from CNSSI 4009, chain: FIPS PUB 201-1).
+  - D4 (1 verbatim + 1 paraphrased): External Network (from 800-53r5 glossary), Internal Network (paraphrased — shortened from 800-53r5 glossary).
+  - D5 (5 verbatim): Audit Log (chain: NIST SP 800-53 Rev 4), Audit Record (chain: NIST SP 800-53 Rev 4), Audit Trail (chain: NIST SP 800-47), Vulnerability Assessment (from CNSSI 4009), Continuous Monitoring (chain: NIST SP 800-137).
+  - 8 verbatim + 1 paraphrased. All from already-extracted sources; no new source PDFs added. Staging file at `cards/drafts/2026-05-19_Final-Light-Batch.md`.
+- Deck stands at **116 cards**: 107 verified (after PR-#11 promotion) + 9 draft (this batch). Verbatim ratio: 102/116 = 88%.
+- Domain coverage shift: D1=25, D2=13, **D3=21 (+2)**, **D4=35 (+2)**, **D5=22 (+5)**. Lands inside the planned 110-130 "worthwhile study pack" range.
+- **Content phase complete. Next phase: minimal static app (HTML + vanilla JS + Tailwind) per `docs/ux-principles.md`.**
+
+### Known gaps still open after the final light batch
+- **D3 still under exam weight** (18% deck vs 22% exam). A 4-5 card follow-on batch could close it; not blocking app work.
+- **D4 over by 6 points** &mdash; overcorrection from starting at 1%. Future batches should NOT add D4.
+- **Carried-forward primitives** (Frame, Port classifications, IPv4, IPv6, ARP, VLAN, Network Segmentation, Rule-Based AC, Data Classification, AUP, Hardening) &mdash; still no clean source. Addressed if/when new sources are added post-app.

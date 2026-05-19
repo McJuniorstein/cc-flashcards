@@ -1,0 +1,16 @@
+{
+  "id": "cc-48c5e322",
+  "front": "Vulnerability Assessment",
+  "back": "Systematic examination of an information system or product to determine the adequacy of security measures, identify security deficiencies, provide data from which to predict the effectiveness of proposed security measures, and confirm the adequacy of such measures after implementation.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [],
+  "source_excerpt": "Systematic examination of an information system or product to determine the adequacy of security measures, identify security deficiencies, provide data from which to predict the effectiveness of proposed security measures, and confirm the adequacy of such measures after implementation.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 5,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-19T04:36:35Z",
+  "modified_at": null
+}

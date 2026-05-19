@@ -29,21 +29,21 @@ See [`AGENTS.md`](./AGENTS.md) for the verification contract.
 | Card schema | Defined and in use |
 | Extraction pipeline (`scripts/extract.py`) | Working |
 | Verifier (`scripts/verify.py`) | Working, with normalization layer for Marker artifacts; validates `source_chain` shape |
-| **Deck** | **107 cards: 91 verified, 16 draft (pending PR review). Covers all 5 CC domains; D4 went from 1 → 33 across three CNSSI 4009 / 800-41 / 800-94 / RFC 4949 sessions.** |
-| **App** | **Not started.** No framework chosen, no build, no deployment. |
-| **Netlify deployment** | **Not deployed.** Pending content completion and the security checklist. |
+| **Deck** | **116 cards: 107 verified, 9 draft (pending PR review). Covers all 5 CC domains. Ready for app phase.** |
+| **App** | **Not started.** Minimal static app (HTML + vanilla JS + Tailwind) is the next phase per `docs/ux-principles.md`. |
+| **Netlify deployment** | **Not deployed.** Pending app completion and the security checklist. |
 
 ### Domain distribution vs exam weighting
 
 | Domain | Cards | Deck % | Exam % | Status |
 |---|---|---|---|---|
-| D1 Security Principles | 25 | 23% | 26% | aligned |
-| D2 BC/DR/IR | 13 | 12% | 10% | aligned |
-| D3 Access Controls | 19 | 18% | 22% | slightly under |
-| D4 Network Security | 33 | 31% | 24% | over (was severely under; now well-supported) |
-| D5 Security Operations | 17 | 16% | 18% | aligned |
+| D1 Security Principles | 25 | 22% | 26% | aligned |
+| D2 BC/DR/IR | 13 | 11% | 10% | aligned |
+| D3 Access Controls | 21 | 18% | 22% | slightly under (-4) |
+| D4 Network Security | 35 | 30% | 24% | over (+6; was severely under at 1%) |
+| D5 Security Operations | 22 | 19% | 18% | aligned |
 
-The deck has reached the "worthwhile study pack" range (107 cards, target was 110&ndash;130). D4 is now over-represented vs its exam weight, but that's an over-correction from being at 1% &mdash; D4 content depth is now strong. Future content batches should skew D1, D3, or D5 (or add a few primitive D4 cards once more sources are added). Known content gaps and provenance flags are tracked in `CHANGELOG.md`.
+**Deck status: ready for app phase.** 116 cards lands inside the planned "worthwhile study pack" range (110&ndash;130). 4 of 5 domains are within 3 points of exam weighting; D4 over-correction is the cost of starting from 1 D4 card. Known content gaps and provenance flags are tracked in `CHANGELOG.md`; another small D3 batch could close the remaining gap, but is not blocking app work.
 
 ## Project structure
 
