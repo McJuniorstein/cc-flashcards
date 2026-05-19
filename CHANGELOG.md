@@ -69,3 +69,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **VLAN, Network Segmentation** — not in CNSSI 4009. Likely covered by NIST SP 800-125B or 800-41.
 - **D5 still light** — 9 cards covers Sec Ops thinly. SP 800-53 Rev 5 AU/CM/IR/SI families are untapped.
 - **OSI Model / TCP/IP Model** — filed but flagged; awaiting reviewer decision on the provenance stretch.
+- **Post-PR-#9 promotion (2026-05-18):** all 15 PR-#9 drafts promoted from `status: "draft"` to `"verified"`. Verbatim cards via `scripts/verify.py --promote`; paraphrased cards (DAC, Need-to-Know, Separation of Duties, VPN, IDS, OSI Model, TCP/IP Model) flipped manually with `modified_at` set, since the human PR review required by AGENTS.md happened on PR #9. The OSI and TCP/IP cards keep their ⚠ provenance-stretch flags documented in the staging file `cards/drafts/2026-05-18_D3-D4-gaps.md`. Deck moved to 75 verified / 0 draft.
+- **D4 + D5 batch from CNSSI 4009 (16 draft cards, status: draft, awaiting PR review):**
+  - D4 (8): Distributed Denial of Service (DDoS), Packet Sniffer, Wireless Access Point (WAP), Wi-Fi Protected Access 2 (WPA2, paraphrased), Jamming, Wireless Intrusion Detection System (WIDS), Gateway, Proxy. `source_chain` populated for Jamming (IETF RFC 4949 Ver 2), WIDS (DoD 8420.1), Gateway (IETF RFC 4949 Ver 2), Proxy (NIST SP 800-44 Rev 2); others organic to CNSSI.
+  - D5 (8): Encryption, Hashing, Symmetric Encryption Algorithm, Public Key Cryptography (PKC), Baseline Configuration, Configuration Management (paraphrased), Patch Management, Security Awareness and Training Program. `source_chain` populated for Encryption (ISO/IEC 7498-2), Hashing (NIST SP 800-72), Symmetric Encryption Algorithm (NIST SP 800-49), Baseline Configuration and Configuration Management (NIST SP 800-53 Rev 4); others organic to CNSSI.
+  - 14 verbatim + 2 paraphrased (WPA2 and Configuration Management shortened for flashcard readability; original CNSSI text preserved in `source_excerpt`).
+  - Staging file at `cards/drafts/2026-05-18_D4-D5-batch.md` records the full content and the deferred-gaps section.
+- Deck stands at **91 cards**: 75 verified (after PR-#9 promotion) + 16 draft (this batch). Verbatim ratio: 80/91 = 88%.
+- Domain coverage shift: D1=25, D2=13, D3=19, **D4=17 (+8 this session, was 9)**, **D5=17 (+8 this session, was 9)**. Deck distribution now within 5 points of exam weighting in every domain.
+
+### Known gaps still open after the D4+D5 batch
+- **Carried forward from PR #9:** Rule-Based Access Control (no NIST/CNSSI source).
+- **D4 carried forward:** Packet, Frame, Segment/Datagram, Port (well-known/registered/dynamic), IPv4, IPv6, ARP, VLAN, Network Segmentation. None are standalone glossary entries in CNSSI 4009 or any existing source; would need RFC 1122 / NIST SP 800-94 / 800-41 / 800-125B added.
+- **D5 carried forward:** Data Classification, System Hardening, Acceptable Use Policy (AUP). Not in CNSSI 4009 as standalone entries.
+- **OSI Model / TCP/IP Model** flags retained in staging file `cards/drafts/2026-05-18_D3-D4-gaps.md` even after promotion. Reviewer's call to keep stands.

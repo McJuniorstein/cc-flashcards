@@ -1,0 +1,18 @@
+{
+  "id": "cc-11176528",
+  "front": "Encryption",
+  "back": "The cryptographic transformation of data to produce ciphertext.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "ISO/IEC 7498-2"
+  ],
+  "source_excerpt": "The cryptographic transformation of data to produce ciphertext.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 5,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T23:47:39Z",
+  "modified_at": null
+}

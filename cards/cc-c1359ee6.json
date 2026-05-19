@@ -1,0 +1,18 @@
+{
+  "id": "cc-c1359ee6",
+  "front": "Wireless Intrusion Detection System (WIDS)",
+  "back": "A commercial wireless technology that assists designated personnel with the monitoring of specific parts of the radio frequency (RF) spectrum to identify unauthorized wireless transmissions and/or activities.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "DoD 8420.1"
+  ],
+  "source_excerpt": "A commercial wireless technology that assists designated personnel with the monitoring of specific parts of the radio frequency (RF) spectrum to identify unauthorized wireless transmissions and/or activities.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 4,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-18T23:47:39Z",
+  "modified_at": null
+}
