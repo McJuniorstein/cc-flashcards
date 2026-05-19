@@ -3,9 +3,8 @@
 # per the pre-launch security checklist in docs/planning/.
 
 [build]
-  # Build command populated when the app exists. Placeholder for now.
   publish = "app/dist"
-  command = "echo 'no app yet'"
+  command = "python3 scripts/build_app.py"
 
 [[headers]]
   for = "/*"

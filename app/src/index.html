@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Free, source-verified flashcards for the ISC2 Certified in Cybersecurity (CC) exam. Definitions cited verbatim from NIST and CNSSI publications.">
+  <meta name="color-scheme" content="light dark">
+  <title>CC Flashcards</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <h1>CC Flashcards</h1>
+    <div class="topbar-actions">
+      <button type="button" id="theme-toggle" class="icon-button" aria-label="Toggle colour theme" aria-pressed="false">
+        <span aria-hidden="true" data-theme-icon>auto</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Setup view: pick a study mode -->
+    <section id="view-setup" class="view" aria-labelledby="setup-heading">
+      <h2 id="setup-heading">What do you want to study?</h2>
+
+      <div class="mode-grid" role="group" aria-label="Study mode">
+        <button type="button" class="mode-button" data-mode="all">
+          <span class="mode-label">All cards</span>
+          <span class="mode-count" data-count="all">&hellip;</span>
+        </button>
+        <button type="button" class="mode-button" data-mode="random">
+          <span class="mode-label">Random single card</span>
+          <span class="mode-count" aria-hidden="true">1</span>
+        </button>
+        <button type="button" class="mode-button" data-mode="review">
+          <span class="mode-label">Review marked only</span>
+          <span class="mode-count" data-count="review">0</span>
+        </button>
+      </div>
+
+      <h3 class="domain-heading">Or pick a domain</h3>
+      <div class="domain-grid" role="group" aria-label="Study by domain"
+           id="domain-grid"></div>
+
+      <p class="known-summary" aria-live="polite">
+        <span data-count="known">0</span> marked Known &middot;
+        <span data-count="review">0</span> marked Review again
+        <button type="button" id="reset-progress" class="link-button">Reset progress</button>
+      </p>
+    </section>
+
+    <!-- Studying view: card front/back, advance controls -->
+    <section id="view-study" class="view" hidden aria-labelledby="study-heading">
+      <h2 id="study-heading" class="visually-hidden">Studying</h2>
+
+      <div class="study-meta" aria-live="polite">
+        <span data-meta="position">Card 1 of N</span>
+        <span data-meta="domain">Domain</span>
+      </div>
+
+      <div class="card" id="card" data-face="front"
+           role="button" tabindex="0"
+           aria-label="Flashcard. Press space, enter, or tap to flip.">
+        <div class="card-face card-front">
+          <p class="card-term" data-card="front"></p>
+          <p class="card-hint">Tap or press space to reveal</p>
+        </div>
+        <div class="card-face card-back">
+          <p class="card-definition" data-card="back"></p>
+          <p class="card-source">
+            Source: <span data-card="source"></span>
+            <span class="card-chain" data-card="chain"></span>
+          </p>
+          <p class="card-type">
+            <span class="answer-type-badge" data-card="answer-type"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="study-controls">
+        <button type="button" id="mark-review" class="study-button review">
+          <kbd>R</kbd> Review again
+        </button>
+        <button type="button" id="flip-card" class="study-button flip">
+          <kbd>Space</kbd> Flip
+        </button>
+        <button type="button" id="mark-known" class="study-button known">
+          <kbd>K</kbd> Known
+        </button>
+      </div>
+
+      <button type="button" id="exit-session" class="link-button exit-link">
+        End session
+      </button>
+    </section>
+
+    <!-- Done view: session summary -->
+    <section id="view-done" class="view" hidden aria-labelledby="done-heading">
+      <h2 id="done-heading">Session complete</h2>
+      <p class="session-summary" aria-live="polite">
+        <span data-done="known">0</span> marked Known &middot;
+        <span data-done="review">0</span> marked Review again
+      </p>
+      <div class="done-actions">
+        <button type="button" id="study-again" class="primary-button">Pick another mode</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      <a href="https://github.com/McJuniorstein/cc-flashcards"
+         rel="noopener noreferrer">Source on GitHub</a>
+      &middot;
+      Cards are CC0 1.0 Universal &middot;
+      Code is MIT
+    </p>
+    <p class="disclaimer">
+      Not affiliated with ISC2, CompTIA, or any certification issuer.
+      ISC2&reg;, CC&#8480;, Security+&reg;, and related marks belong to their respective owners.
+    </p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
