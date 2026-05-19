@@ -1,0 +1,18 @@
+{
+  "id": "cc-55fd406b",
+  "front": "User Datagram Protocol (UDP)",
+  "back": "An Internet Standard, Transport-Layer protocol that delivers a sequence of datagrams from one computer to another in a computer network.",
+  "source_doc": "IETF RFC 4949",
+  "source_section": "Glossary",
+  "source_chain": [
+    "IETF RFC 768"
+  ],
+  "source_excerpt": "An Internet Standard, Transport-Layer protocol (RFC 768) that delivers a sequence of datagrams from one computer to another in a computer network.",
+  "source_hash": "sha256:7b42adb9c4c8a15aca42d338ec92edae59151004db21510f88e609fea9e53807",
+  "answer_type": "paraphrased",
+  "primary_domain": 4,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-19T03:43:08Z",
+  "modified_at": null
+}

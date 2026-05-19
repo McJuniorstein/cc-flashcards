@@ -1,0 +1,16 @@
+{
+  "id": "cc-3f81e956",
+  "front": "Ingress Filtering",
+  "back": "Filtering of incoming network traffic.",
+  "source_doc": "NIST SP 800-41 Rev 1",
+  "source_section": "Appendix A — Glossary",
+  "source_chain": [],
+  "source_excerpt": "Filtering of incoming network traffic.",
+  "source_hash": "sha256:46fc63d54d9fb5275e6f94ec043203abbc8281d2cd46e704e0dada71c5fae009",
+  "answer_type": "verbatim",
+  "primary_domain": 4,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-19T03:43:08Z",
+  "modified_at": null
+}
