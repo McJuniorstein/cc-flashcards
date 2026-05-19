@@ -1,0 +1,16 @@
+{
+  "id": "cc-8a1d929c",
+  "front": "External Network",
+  "back": "A network not controlled by the organization.",
+  "source_doc": "NIST SP 800-53 Rev 5",
+  "source_section": "Appendix A",
+  "source_chain": [],
+  "source_excerpt": "A network not controlled by the organization.",
+  "source_hash": "sha256:44a04031e41bb2e32fe3b8b94a2b915b0d40c8fb1f2d803e464f3c383b375d5a",
+  "answer_type": "verbatim",
+  "primary_domain": 4,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-19T04:36:35Z",
+  "modified_at": null
+}

@@ -1,0 +1,18 @@
+{
+  "id": "cc-8890f36a",
+  "front": "Audit Record",
+  "back": "An individual entry in an audit log related to an audited event.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "NIST SP 800-53 Rev 4"
+  ],
+  "source_excerpt": "An individual entry in an audit log related to an audited event.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 5,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-19T04:36:35Z",
+  "modified_at": null
+}

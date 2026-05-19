@@ -1,0 +1,18 @@
+{
+  "id": "cc-8e325674",
+  "front": "Identification",
+  "back": "The process of discovering the true identity (i.e., origin, initial history) of a person or item from the entire collection of similar persons or items.",
+  "source_doc": "CNSSI 4009",
+  "source_section": "Terms and Definitions",
+  "source_chain": [
+    "FIPS PUB 201-1"
+  ],
+  "source_excerpt": "The process of discovering the true identity (i.e., origin, initial history) of a person or item from the entire collection of similar persons or items.",
+  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "answer_type": "verbatim",
+  "primary_domain": 3,
+  "secondary_domains": [],
+  "status": "draft",
+  "created_at": "2026-05-19T04:36:35Z",
+  "modified_at": null
+}
