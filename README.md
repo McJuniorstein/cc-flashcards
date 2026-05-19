@@ -67,7 +67,7 @@ See [`AGENTS.md`](./AGENTS.md) for the verification contract.
 
 ## Disclaimer
 
-*This is an independent, community-maintained study tool. It is not affiliated with, endorsed by, or sponsored by ISC2&reg;. ISC2&reg;, CISSP&reg;, CC&#8480;, and related marks are trademarks of ISC2, Inc.*
+*This is an independent, community-maintained study tool. It is not affiliated with, endorsed by, or sponsored by ISC2&reg;, CompTIA, or any certification issuer. ISC2&reg;, CC&#8480;, CISSP&reg;, Security+&reg;, and related marks are trademarks of their respective owners.*
 
 ## Security
 
