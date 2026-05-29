@@ -1,18 +1,16 @@
 {
   "id": "cc-aaaa0002",
   "front": "TCP/IP Model",
-  "back": "A four-layer network model used by the Internet protocol suite (IETF RFC 1122): Link, Internet, Transport, and Application. TCP/IP collapses the OSI session, presentation, and application layers into a single application layer.",
-  "source_doc": "CNSSI 4009",
-  "source_section": "Annex A — Acronyms",
-  "source_chain": [
-    "IETF RFC 1122"
-  ],
-  "source_excerpt": "TCP/IP Transmission Control Protocol/Internet Protocol",
-  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "back": "The IETF Internet Protocol Suite (TCP/IP), which RFC 4949 treats as five layers: Application, Transport, Internet, Network Interface, and Network Hardware. It has no distinct Session or Presentation layer; those OSI upper-layer functions fold into the application.",
+  "source_doc": "IETF RFC 4949",
+  "source_section": "Glossary — Internet Protocol Suite (IPS)",
+  "source_chain": [],
+  "source_excerpt": "This Glossary treats the IPS as having five protocol layers -- Application, Transport, Internet, Network Interface, and Network Hardware",
+  "source_hash": "sha256:7b42adb9c4c8a15aca42d338ec92edae59151004db21510f88e609fea9e53807",
   "answer_type": "paraphrased",
   "primary_domain": 4,
   "secondary_domains": [],
   "status": "verified",
   "created_at": "2026-05-18T22:47:23Z",
-  "modified_at": "2026-05-18T23:33:18Z"
+  "modified_at": "2026-05-29T04:07:35Z"
 }

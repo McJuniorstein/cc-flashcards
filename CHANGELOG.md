@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Re-sourced the OSI (`cc-aaaa0001`) and TCP/IP (`cc-aaaa0002`) model cards from `CNSSI 4009` (acronym annex only) to `IETF RFC 4949`, which actually defines both models in its glossary. Each `source_excerpt` is now a verbatim substring of a held, hashed source. The TCP/IP card is corrected from an unsupported "four-layer" claim to RFC 4949's five-layer treatment (RFC 1122, the four-layer model's source, is not in `/sources/`) and is now attributed rather than stated as universal fact. Reconciles both cards with the `paraphrased` rules in `AGENTS.md`. Audit record: `cards/drafts/2026-05-29_Model-cards-resource.md`.
+
 ### Added
 - Initial repository skeleton
 - Card schema (`cards/schema.json`) with `verbatim` and `paraphrased` answer types
