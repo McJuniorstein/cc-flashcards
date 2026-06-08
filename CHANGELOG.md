@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Re-sourced the OSI (`cc-aaaa0001`) and TCP/IP (`cc-aaaa0002`) model cards from `CNSSI 4009` (acronym annex only) to `IETF RFC 4949`, which actually defines both models in its glossary. Each `source_excerpt` is now a verbatim substring of a held, hashed source. The TCP/IP card is corrected from an unsupported "four-layer" claim to RFC 4949's five-layer treatment (RFC 1122, the four-layer model's source, is not in `/sources/`) and is now attributed rather than stated as universal fact. Reconciles both cards with the `paraphrased` rules in `AGENTS.md`. Audit record: `cards/drafts/2026-05-29_Model-cards-resource.md`.
+- Reconciled three more paraphrased cards whose `back` claimed more than the `source_excerpt` supported (found via a full audit of all 14 paraphrased cards): **VPN** (`cc-ae5fac0c`) — restored the excerpt's "security controls" (was narrowed to "encryption") and dropped the added "shared or public network," fixing a terminology-precision break; **IDS** (`cc-48c08ba6`) — re-sourced from `CNSSI 4009` to the held `NIST SP 800-94`, whose §2.1 supports the IDS-vs-IPS "detect-only" distinction the card asserts; **Separation of Duties** (`cc-d32f1c6b`) — trimmed an added "complete transaction" framing absent from the SP 800-53r5 excerpt. All paraphrased cards now stay within their excerpts. Audit record updated in `cards/drafts/2026-05-29_Model-cards-resource.md`.
 
 ### Added
 - Initial repository skeleton

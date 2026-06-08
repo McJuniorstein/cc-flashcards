@@ -1,7 +1,7 @@
 {
   "id": "cc-d32f1c6b",
   "front": "Separation of Duties",
-  "back": "Dividing mission, business, and support functions among different individuals or roles so that no single person controls a complete transaction — reducing the risk of abuse of privilege or malicious activity without collusion.",
+  "back": "Dividing mission, business, and support functions among different individuals or roles — reducing the potential for abuse of authorized privileges and the risk of malicious activity without collusion.",
   "source_doc": "NIST SP 800-53 Rev 5",
   "source_section": "AC-5",
   "source_chain": [],
@@ -12,5 +12,5 @@
   "secondary_domains": [],
   "status": "verified",
   "created_at": "2026-05-18T22:47:23Z",
-  "modified_at": "2026-05-18T23:33:18Z"
+  "modified_at": "2026-06-08T21:24:46Z"
 }

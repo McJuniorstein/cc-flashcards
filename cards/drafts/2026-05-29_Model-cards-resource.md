@@ -50,3 +50,40 @@ four-layer framing is wanted later, the correct path is to add RFC 1122 to
 
 Both cards remain `answer_type: paraphrased`, `status: verified`. `modified_at`
 bumped to `2026-05-29T04:07:35Z`.
+
+---
+
+## Follow-up: three more paraphrased cards with the same defect (2026-06-08)
+
+A full audit of the remaining 12 paraphrased cards (does the `back` assert more
+than its `source_excerpt` supports?) found three with the same class of issue. The
+other nine stay within their excerpts. Fixed under `modified_at: 2026-06-08T21:24:46Z`.
+
+### cc-ae5fac0c — Virtual Private Network (VPN)
+
+The strongest break: a terminology-precision violation (`AGENTS.md` line 48). The
+`back` swapped the CNSSI excerpt's deliberately broad **"security controls"** for
+the narrower **"encryption"**, and added **"over a shared or public network"** —
+neither is in the excerpt. Source (CNSSI 4009) and excerpt are unchanged and correct
+(the excerpt is verbatim once the PDF's `dedicated\n\nline` break is whitespace-
+collapsed). Only the `back` was rewritten to stay faithful:
+
+> *"A protected information system link that uses tunneling, security controls, and endpoint address translation to give the impression of a dedicated line."*
+
+### cc-48c08ba6 — Intrusion Detection System (IDS)
+
+The `back` asserted *"An IDS detects but does not block"* — true and pedagogically
+the key IDS-vs-IPS distinction, but absent from the card's CNSSI excerpt. **Re-sourced
+to NIST SP 800-94** (already held + hashed; the card previously only chained to it),
+whose §2.1 states both halves: *"An intrusion detection system (IDS) is software that
+automates the intrusion detection process. An intrusion prevention system (IPS) is
+software that has all the capabilities of an intrusion detection system and can also
+attempt to stop possible incidents."* The "detect-only" framing is now a faithful
+complement of the IPS-can-stop clause in the excerpt. `source_doc` CNSSI 4009 →
+NIST SP 800-94; `source_chain` `["NIST SP 800-94"]` → `[]`; hash updated.
+
+### cc-d32f1c6b — Separation of Duties (minor)
+
+The `back` added *"so that no single person controls a complete transaction"* — a
+standard SoD framing not present in the SP 800-53r5 excerpt. Trimmed to stay within
+the excerpt; source unchanged.

@@ -1,18 +1,16 @@
 {
   "id": "cc-48c08ba6",
   "front": "Intrusion Detection System (IDS)",
-  "back": "Software that monitors events in a computer system or network and analyzes them for signs of possible incidents. An IDS detects but does not block.",
-  "source_doc": "CNSSI 4009",
-  "source_section": "Terms and Definitions",
-  "source_chain": [
-    "NIST SP 800-94"
-  ],
-  "source_excerpt": "intrusion detection The process of monitoring the events occurring in a computer system or network and analyzing them for signs of possible incidents. ... intrusion detection system (IDS) Software that automates the intrusion detection process.",
-  "source_hash": "sha256:666c24d645010d5cae0bb2f9da0c7e1d6d26cdb5e842d216526168209267464c",
+  "back": "Software that automates the intrusion detection process: monitoring events in a computer system or network and analyzing them for signs of possible incidents. Unlike an intrusion prevention system (IPS), which can also attempt to stop incidents, an IDS only detects them.",
+  "source_doc": "NIST SP 800-94",
+  "source_section": "Section 2.1 — Uses of IDPS Technologies",
+  "source_chain": [],
+  "source_excerpt": "Intrusion detection is the process of monitoring the events occurring in a computer system or network and analyzing them for signs of possible incidents ... An intrusion detection system (IDS) is software that automates the intrusion detection process. An intrusion prevention system (IPS) is software that has all the capabilities of an intrusion detection system and can also attempt to stop possible incidents.",
+  "source_hash": "sha256:4562ebbad30430d7ecd9aca78c165a23fbddedcb14698ad0fe46629f8cabd536",
   "answer_type": "paraphrased",
   "primary_domain": 4,
   "secondary_domains": [],
   "status": "verified",
   "created_at": "2026-05-18T22:47:23Z",
-  "modified_at": "2026-05-18T23:33:18Z"
+  "modified_at": "2026-06-08T21:24:46Z"
 }
