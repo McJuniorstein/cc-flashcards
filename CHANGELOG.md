@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- `scripts/test_verify.py` &mdash; stdlib `unittest` suite for `verify.py` (the protocol guardian): 42 tests covering the normalization layer (every Marker artifact + whitespace), full schema validation (including `source_chain` shape), and the `verify_card` ok/paraphrased/fail paths exercised against real temp files (verbatim match, byte-mismatch, excerpt-not-found, normalization-only match, hash-mismatch-on-disk, unknown hash, invalid JSON) plus `load_known_sources`. No new dependencies; run with `python3 scripts/test_verify.py`. Documented in `scripts/README.md`.
+- `.github/workflows/ci.yml` &mdash; GitHub Actions CI: runs the `verify.py` unit tests and verifies the full card deck against sources on every push to `main` and every pull request, across Python 3.11 and 3.13. Stdlib-only, so no dependency-install step; read-only permissions.
 - Initial repository skeleton
 - Card schema (`cards/schema.json`) with `verbatim` and `paraphrased` answer types
 - Verification protocol (`AGENTS.md`) &mdash; NIST verbatim text is the source of truth

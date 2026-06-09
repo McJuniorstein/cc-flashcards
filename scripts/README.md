@@ -41,3 +41,20 @@ Exit code is non-zero if any card fails a check the verifier owns.
 **`--promote`**
 
 With `--promote`, after verification any card that (a) passes as verbatim and (b) currently has `status: "draft"` is rewritten in place with `status: "verified"` and `modified_at` set to the current UTC time. Paraphrased and failed cards are never touched &mdash; paraphrased cards still require human PR review per `AGENTS.md`. This covers verification-checklist items 1 (source match), 2 (citation accuracy, partial), and 3 (source freshness) from `AGENTS.md`. Items 4&ndash;6 (domain assignment correctness, semantic dupes, unambiguous front) rely on author judgment at write-time and are not enforced here.
+
+## test_verify.py
+
+Unit tests for `verify.py`, the guardian of the card protocol. Stdlib `unittest`; no dependencies, no test runner to install &mdash; matching the project's no-dependencies stance.
+
+**Usage**
+```
+python3 scripts/test_verify.py                          # direct, verbose
+python3 -m unittest scripts.test_verify                 # from repo root
+python3 -m unittest discover -s scripts -p 'test_*.py'  # discovery
+```
+
+**Coverage** &mdash; the three pieces `verify.py` owns:
+- `normalize_for_substring_check`: each Marker artifact (footnote `<sup>`, page-anchor span, footnote-ref link, bold, italic, PDF hyphen-break) plus whitespace collapse; and that normalization is independent of the strict `back == source_excerpt` byte check
+- `validate_schema`: every field rule, including the `source_chain` shape (list of unique non-empty strings) and optional-field absence
+- `verify_card`: the `ok` / `paraphrased` / `fail` paths exercised against real temp source + card files, so the hashing, substring, and byte-equality logic all run for real &mdash; including hash-mismatch-on-disk (mutated source), unknown hash, and invalid JSON
+- `load_known_sources`: digest&rarr;`.md` mapping, including skipping a `.sha256` with no sibling `.md`
